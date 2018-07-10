@@ -1,0 +1,15 @@
+{loop plugins::categoryinfo($_catid) $cat}
+<section class="wow bounceIn">
+<div class="t_2">
+<div>
+<h3><a href="{$cat['url']}" title="{$cat['catname']}">{$cat['catname']}</a></h3>
+<p>{$cat['htmldir']}</p>
+<nav class="url_1">
+{loop categories($cat[catid]) $cat}
+<a href="{$cat[url]}" title="{$cat[catname]}">{$cat[catname]}</a>
+{/loop}
+</nav>
+</div>
+</div>
+</section>
+{/loop}

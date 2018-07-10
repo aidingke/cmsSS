@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection">
+<meta http-equiv="x-rim-auto-match" content="none">
+<title>{lang(membercenter)}</title>
+<meta name="keywords" content="{getKeywords($archive,$category,$catid,$type)}" />
+<meta name="description" content="{getDescription($archive,$category,$catid,$type)}" />
+<meta name="author" content="CmsEasy Team" />
+<link rel="icon" href="{get(site_ico)}" type="image/x-icon" />
+
+<link href="{$skin_path}/css/user.css" rel="stylesheet" type="text/css">
+
+<meta name="author" content="CmsEasy Team" />
+<link rel="icon" href="{get(site_ico)}" type="image/x-icon" />
+
+<body>
+
+ <div id="navbar">
+      <a href="#" class="menubtn">menu</a>
+      <!-- use captain icon for toggle menu -->
+      <div id="hamburgermenu">
+
+	   <strong><a href="#">{lang(edituserinfo)}</a></strong>
+  
+<div class="member_info">
+			  <span>
+{lang(welcomeyou)}，{$user.username} [<a href="{url('user/logout')}" class="logout">{lang(logout)}</a>]</span>
+<div class="blank10"></div>
+              <a href="{url('user/edit/table/user')}">{lang(edituserinfo)}</a>&nbsp;&nbsp;<a href="{url('user/changepassword')}">{lang(changepassword)}</a>
+
+
+              </div>
+        <ul>
+
+ 
+			  {if chkfpw('add_archive',$user['groupid'])}<li><a href="{url('manage/add/manage/archive')}">{lang(addcontent)}</a></li>{/if}
+              <li><a href="{url('/manage/list/manage/archive/needcheck/1')}">{lang(waitcheckedcontent)}</a></li>
+              <li><a href="{url('/manage/list/manage/archive')}">{lang(alreadycheckedcontent)}</a></li>
+			  <!-- <li><a href="{url('/manage/invitelist/manage/invite')}">{lang('invitation-code')}</a></li> -->
+              <li><a href="{url('/manage/commentlist/manage/comment')}">{lang(comment)}</a></li>
+              <li><a href="{url('/manage/zanlist/manage/zanlog')}">{lang(praise)}</a></li>
+              <li><a href="{url('union/stats/manage/union')}">{lang(stats)}</a></li>
+              <li><a href="{url('union/getcode/manage/union')}">{lang(access_code)}</a></li>
+              <li><a href="{url('union/visit/manage/union')}">{lang(access_statistics)}</a></li>
+              <li><a href="{url('union/reguser/manage/union')}">{lang(registered_users)}</a></li>
+              <li><a href="{url('union/pay/manage/union')}">{lang(promotion_of_settlement)}</a></li>
+              <li><a href="{url('union/edit/manage/union')}">{lang(modify)}</a></li>
+        </ul>
+      </div>
+    </div>
+
+	<div id="box">
+
+  <header>
+   
+
+	<a title="{get(sitename)}" href="{$base_url}/" class="logo" ><img src="{get('site_logo')}" alt="{get(sitename)}" width="{get(logo_width)}" height="{get(logo_height)}" />
+<span>{get('sitename')}</span></a>
+  </header>
+  
+
+ <div class="user_welcome">
+<img src="{$skin_path}/images/user/avatar.png" />
+<span>
+{lang(welcomeyou)}，{$user.username} [	<a href="{url('user/logout')}" class="logout">{lang(logout)}</a>	]
+</span>
+
+</div>
+
+ <div class="user_function">
+
+<a href="{url('user/edit/table/user')}" class="icon_1">{lang(edituserinfo)}</a>
+
+<a href="{url('user/changepassword')}" class="icon_2">{lang(changepassword)}</a>
+
+<a href="{url('manage/orderslist/manage/orders')}" class="icon_3">{lang(vieworders)}</a>
+<a href="{url('archive/orders')}" class="icon_4">{lang(shoppingcart)}</a>
+
+
+<div class="clear"></div>
+</div>
+
+  
+<div class="line"></div>
+<div class="box">
+        <?php
+if(hasflash()){
+	$showmessage = showflash();
+	if(strlen($showmessage)>200){ 
+?>
+<div id='message'><span style="color:red;float:left"><?php echo $showmessage; ?></span>
+<span style="color:blue;float:right"><a href="#" onClick="javascript:turnoff('#message');">(×)</a></span></div><div class="blank20"></div>
+<?php
+    }else{
+?>
+<script type="text/javascript">
+art.dialog({
+		id:'messagebox',
+		content:'<?php echo $showmessage; ?>',
+		title:'{lang(prompted)}',
+		time: 2,
+		lock:true
+	});
+</script>
+<?php
+    }
+}
+?>
+
+

@@ -1,0 +1,22 @@
+{loop plugins::categoryinfo($_catid) $cat}
+
+{loop plugins::categoryinfo($_catid) $cat}
+<div class="title">
+<h3><a href="{$cat[url]}">{$cat[catname]}<small>{$cat[subtitle]}</small></a></h3>
+<p>{$cat[description]}</p>
+<span>——</span>
+</div>
+{/loop}
+
+<div class="index-3-left col-xs-12 col-sm-4 col-md-8 col-lg-8">
+{$cat[categorycontent]}
+</div>
+
+<div class=" col-xs-12 col-sm-8 col-md-4 col-lg-4 img-auto">
+<img class="img-responsive " src="{$cat[image]}" onerror='this.src="{config::get('onerror_pic')}"' />
+</div>
+<div class="blank60"></div>
+ <p class="text-center">
+<a href="{$cat[url]}" class="btn btn-lg btn-primary" href="{$cat[url]}" role="button">{lang(more)}</a></p>
+</div>
+{/loop}
