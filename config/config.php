@@ -17,11 +17,11 @@
 
 //网站地址[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="http://起始并以 / 结束！" /></span>]
 
-'sitename'=>'网站名称', 
+'sitename'=>'普车官网', 
 
 //网站名称[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="请填写网站简称，主要用于页底说明！" /></span>]
 
-'fullname'=>'网页标题', 
+'fullname'=>'普车官网', 
 
 //网页标题[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="网页标题处显示，可结合关键词使用！" /></span>]
 
@@ -765,11 +765,11 @@
 
 //地图高度[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写地图的高度，例如：300！，单位（PX）！" /></span>]
 
-'ditu_center_left'=>'116.47033', 
+'ditu_center_left'=>'113.329309', 
 
 //地图-经度[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写地图的经度！" /></span>]
 
-'ditu_center_right'=>'39.919009', 
+'ditu_center_right'=>'23.155562', 
 
 //地图-纬度[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写地图的纬度！" /></span>]
 
@@ -787,11 +787,11 @@
 
 //信息窗内容[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写地图坐标点提示信息内容！" /></span>]
 
-'ditu_maker_left'=>'116.47033',
+'ditu_maker_left'=>'113.329309',
 
 //标记点经度[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写地图坐标点经度！" /></span>]
 
-'ditu_maker_right'=>'39.919009',
+'ditu_maker_right'=>'23.155562',
 
 //标记点纬度[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写地图坐标点提示纬度！" /></span>]
 
@@ -986,7 +986,7 @@
 
 //图片4地址[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="上传幻灯中的图片！" /></span>]=>image
 
-'slide_pic4_title'=>'欢迎网建公司及工作室参与分享计划', //图片4标题[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写幻灯中的标题！" /></span>]
+'slide_pic4_title'=>'欢迎公司及工作室参与分享计划', //图片4标题[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写幻灯中的标题！" /></span>]
 
 'slide_pic4_info'=>'一款基于 PHP+Mysql 架构的网站内容管理系统，也是一个 PHP 开发平台。 采用模块化方式开发，功能易用便于扩展，可面向大中型站点提供重量级网站建设解决方案。',
 

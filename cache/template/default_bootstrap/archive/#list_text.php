@@ -3,7 +3,13 @@
 <!-- 面包屑导航开始 -->
 <?php echo template('position.html'); ?>
 <!-- 面包屑导航结束 -->
-
+<style>
+.blank30,.blank60{height: 0px;}
+.container p{font-size: 0.5rem;padding: 0 .3rem;}
+.post-masonry{margin-bottom: 10px;}
+.list-date p{width: 7rem;}
+.list-container .row{margin-bottom: 0}
+</style>
 
 <!-- 中部开始 -->
 <div class="container list-container">

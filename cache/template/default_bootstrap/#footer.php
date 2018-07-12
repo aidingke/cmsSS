@@ -4,7 +4,7 @@
 <footer>
 <div class="foot">
 <div class="container">
-<div class="row">
+<div class="row hid">
 
 <h5><?php echo getDescription($archive,$category,$catid,$type);?></h5>
 
@@ -29,7 +29,40 @@
 
 </div>
 
-<div class="row">
+<div>
+<div id="float" style="display:none;">
+  <div id="float_close"><a href="javascript:closeFloat();"><img src="./images/float_close.png"></a></div>
+  <form id="floatForm" method="post" action="/index.php?case=guestbook&act=index" name="frmGuestbookSubmit" class="form_message">
+<input name="flcode" value="0" type="hidden">
+<ul>
+  <li>
+<label>姓名：</label>
+<input name="nickname" id="fl_name" class="float_input" type="text">
+  </li>
+  <li>
+<label>电话：</label>
+<input name="guesttel" id="fl_phone" class="float_input guestbook_input" type="text">
+<input type="text" name="title" id="title" value="客户留言" class="guestbook_input" style="display:none;">
+  </li>
+<li>
+<label>留言可赠新品体验</label>
+<textarea name="content" id="fl_content" class="float_textarea guestbook_textarea" onblur="if(this.value=='')this.value=''" onfocus="this.value=''"></textarea>
+<button href="javascript:doFloatSubmit();" class="btn btn-primary" id="float_send" type="submit" name="submit" value="发送 SEND">发送 SEND</button>
+</li>
+</ul>
+  <input name="__hash__" value="0c374db104b424eee184e11bf3471a40_9c3727b30af996bd7cb89a88e2df565c" type="hidden"></form>
+  <h4>加盟热线:</h4>
+  <h3>400  779  8866</h3>
+  <h2><a id="float_servcie_call" href="http://manage.adcall.com.cn/WebCall/TM43.inc.jsp?wid=9001002346" target="_blank"><img src="./images/float_bottom.png" id="float_servcie_call_img"></a></h2>
+</div>
+<div id="float_hide"> <a href="javascript:showFloat();"><img src="./images/float_hide.png"></a> 
+<div class="ToTops" onclick="$('html,body').animate({scrollTop : '0px'}, 400);"><i class="icon iconfont"><img src="./images/uparrow.png" /></i>回顶部</div>
+</div>
+</div>
+
+
+
+<div class="row hid">
 <div class="foot-contactus col-xs-12 col-sm-6 col-md-5 col-lg-3">
 
 <ul>
@@ -65,6 +98,46 @@
         $(function() {
             $('#qrcode').qrcode({width: 150,height: 150,text: window.location.href});
         });
+
+function closeFloat(){
+$("#float").hide();	
+$("#float_hide").show();	
+}
+function showFloat(){
+$("#float_hide").hide();	
+$("#float").show();	
+}
+function doFloatSubmit(){
+var name=$("#fl_name").val();
+var phone=$("#fl_phone").val();
+var content=$("#fl_content").val();
+if(!name || name=="姓名"){
+alert("姓名不能为空!");	
+return;
+}
+if(!phone || phone=="电话"){
+alert("电话不能为空!");	
+return;
+}
+if(!content || content=="留言"){
+alert("内容不能为空!");	
+return;
+}
+if(!IsTelephone(phone)){
+alert("请填写正确的电话号码!");	
+return;
+}
+$("#floatForm").submit();	
+}
+function IsTelephone(obj){ 
+var pattern=/(^[0-9]{3,4}\-[0-9]{7,8}$)|(^[0-9]{7,11}$)|(^\([0-9]{3,4}\)[0-9]{3,8}$)|(^0{0,1}13[0-9]{9}$)/; 
+if(pattern.test(obj)){ 
+return true; 
+}else{ 
+return false; 
+} 
+} 
+
 </script>
 </div>
 
@@ -75,7 +148,7 @@
 <p>
 <?php echo get('site_right');?><a href="<?php echo get('site_url');?>" target="_blank"><?php echo get('sitename');?></a>,Inc.All rights reserved.&nbsp;&nbsp;<a href="<?php echo $base_url;?>/sitemap.html" target="_blank"><?php echo lang('sitemap');?></a><?php if(config::get('site_icp')) { ?>&nbsp;&nbsp;<a rel="nofollow" href="http://www.miibeian.gov.cn/" rel="nofollow" target="_blank"><?php echo get('site_icp');?></a><?php } ?><?php if(config::get('site_beian_number')) { ?>&nbsp;&nbsp;<a rel="nofollow" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=<?php echo get('site_beian_number');?>" rel="nofollow" target="_blank"><?php echo get('site_beian');?><?php echo lang('site_beian');?><?php echo get('site_beian_number');?><?php echo lang('number');?></a><?php } ?>
 </p>
-<p>
+<p class="hid">
 <?php if(config::get('site_login')=='1') { ?>&nbsp;&nbsp;<?php echo login_js();?><?php } ?>&nbsp;&nbsp;<?php echo getCopyRight();?><?php if(get('guestbook_enable')) { ?>&nbsp;&nbsp;<a rel="nofollow" title="<?php echo lang('feedback');?>" href="<?php echo url('guestbook');?>" target="_blank"><?php echo lang('feedback');?></a><?php } ?>&nbsp;&nbsp;<a href="<?php echo $base_url;?>/index.php?case=archive&act=rss&catid=<?php echo $catid;?>">Rss</a><?php if(config::get('opguestadd')=='1') { ?>&nbsp;&nbsp;<a rel="nofollow" href="<?php echo $base_url;?>/?g=1"><?php echo lang('opguestadd');?></a><?php } ?></a><?php if(get('countjs')) { ?><script src="<?php echo get('countjs');?>" language="JavaScript"></script><?php } ?>
 </p>
 </div>
@@ -90,7 +163,7 @@
 </div>
 </footer>
 <!-- foot end --><?php if($topid==0) { ?>
-<div class="home-links">
+<div class="home-links hid">
 <div class="hr"></div>
 <div class="container">
 <div class="row">
@@ -101,7 +174,7 @@
 <div class="links-logo">
 <?php if(is_array(friendlink('image',0,24)))
 foreach(friendlink('image',0,24) as $flink) { ?>
-<a href="<?php echo $flink['url'];?>" title="<?php echo $flink['name'];?>"><img src="<?php echo $flink['logo'];?>"width="88" height="31" /></a>
+<a class="hid" href="<?php echo $flink['url'];?>" title="<?php echo $flink['name'];?>"><img src="<?php echo $flink['logo'];?>"width="88" height="31" /></a>
 <?php } ?>
 </div>
 <div class="links-a">

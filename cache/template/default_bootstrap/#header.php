@@ -120,6 +120,10 @@ foreach(categories_nav($t3['catid']) as $t4) { ?>
 <?php } ?>
 </li>
 <?php } ?>
+<li class="oen">
+<a href="./html/work.html" target="_blank" style="color:red;">加盟我们</a>
+</li>
+
 </ul>
 
 </div>

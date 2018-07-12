@@ -387,5 +387,9 @@
     'archive/list_text_pic_column_html_note' => '',
     'archive/show_job_column_html_name' => '招聘内容页分栏模板',
     'archive/show_job_column_html_note' => '',
+    'archive/list_banner_html_name' => '品牌页模版',
+    'archive/list_banner_html_note' => '',
+    'archive/show_banner_html_name' => '品牌页模版',
+    'archive/show_banner_html_note' => '',
   ),
 );

@@ -52,6 +52,9 @@ if(front::get('case') == 'area'){
 }
 ?>
 <section>
-<div class="banner" style="height:<?php echo get('cslide_height');?>px;">
-</div>
+<!--<div class="banner bannerAnimate" style="height:<?php echo get('cslide_height');?>px;">-->
+    <div id="bannerDiv">
+        <div class="banner bannerAnimate">
+        </div>
+    </div>
 </section>

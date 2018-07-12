@@ -2,7 +2,17 @@
 <!-- 面包屑导航开始 -->
 {template 'position.html'}
 <!-- 面包屑导航结束 -->
-
+<style>
+	.blank30,.blank60{height: 0px;}
+	.container p{font-size: 0.5rem;padding: 0 .3rem;}
+	.post-masonry{margin-bottom: 10px;}
+	.list-date p{width: 7rem;}
+	.list-container .row{margin-bottom: 0}
+	@media screen and (min-width: 0) and (max-width: 767px){
+		.container p,.container div{font-size: 0.8rem;}
+		.col-sm-6{padding-right: 0}
+	}
+</style>
 <!-- 页面标题开始 -->
 <div class="title">
 <h3><a>{$archive['title']}<small>{$archive['subtitle']}</small></a></h3>
