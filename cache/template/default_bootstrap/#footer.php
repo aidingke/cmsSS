@@ -60,6 +60,29 @@
 </div>
 </div>
 
+<div class="footerTab">
+<div class="weui-tab">
+<div id="tabbar" class="weui-tabbar">
+<a href="/" class="weui-tabbar__item router-link-active">
+<img id="home" alt="" class="weui-tabbar__icon" src="http://crm.qiaocat.com/upload/ad/0441d203434b24b9f998bcfee01da2ff.png"> 
+<p class="weui-tabbar__label">首页</p>
+</a> 
+<a href="javascript:alert('功能开发中');" class="weui-tabbar__item">
+<img id="find" alt="" class="weui-tabbar__icon" src="http://crm.qiaocat.com/upload/ad/0c9668dbcafbb42c5f7b554649c61762.png">
+<p class="weui-tabbar__label">在线咨询</p>
+</a> 
+<a href="javascript:showFloat();" class="weui-tabbar__item">
+<img id="usercenter" alt="" class="weui-tabbar__icon" src="http://crm.qiaocat.com/upload/ad/5eb84c38dacaeccac251a0e2ea831d66.png"> 
+<p class="weui-tabbar__label">在线留言</p>
+</a>
+</div>
+</div>
+</div>
+
+
+
+
+
 
 
 <div class="row hid">
@@ -98,14 +121,30 @@
         $(function() {
             $('#qrcode').qrcode({width: 150,height: 150,text: window.location.href});
         });
-
+var tip=1;
 function closeFloat(){
+if (window.navigator.userAgent.indexOf("Mobile") > -1) {
+//  手机版
 $("#float").hide();	
-$("#float_hide").show();	
+$("#float_hide").hide();
+tip=2;
+   }else{
+$("#float").hide();	
+$("#float_hide").show();
+tip=1;	
+   }
+
 }
+
 function showFloat(){
+if(tip===1){
 $("#float_hide").hide();	
 $("#float").show();	
+tip=2;
+}else if(tip===2){
+$("#float").hide();
+tip=1;	
+}
 }
 function doFloatSubmit(){
 var name=$("#fl_name").val();

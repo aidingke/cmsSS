@@ -139,7 +139,7 @@
 		
 //网站导航[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置网站导航是否固定在页顶显示" /></span>]=>0/否/1/是
 
-'html_wow'=>'0',
+'html_wow'=>'1',
 
 //网页动画[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置是否在网站开启网页动画效果！" /></span>]=>0/关/1/开
 
