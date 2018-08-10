@@ -240,3 +240,13 @@
 
 <!-- Large modal -->
 
+<ul id="indexSlide" class="index_slide_range">
+  <li><a href="#" style="background-image:url(http://139.199.168.180/upload/images/201808/15338920445815.jpg)" target="_blank"></a></li>
+  <li><a href="#" style="background-image:url(http://139.199.168.180/upload/images/201808/15338920769877.jpg)" target="_blank"></a></li>
+  <li><a href="#" style="background-image:url(http://139.199.168.180/upload/images/201808/15338921138645.gif)" target="_blank"></a></li>
+  <li><a href="#" style="background-image:url(http://139.199.168.180/upload/images/201808/15338920445815.jpg)" target="_blank"></a></li>
+  <li><a href="#" style="background-image:url(http://139.199.168.180/upload/images/201808/15338920769877.jpg)" target="_blank"></a></li>
+</ul>
+
+
+

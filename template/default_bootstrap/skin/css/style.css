@@ -1178,10 +1178,34 @@ header.newstit{text-align:center;}
     line-height: 1.8;
 }
 
+/*根据设备显示首页轮播*/
 
+/*手机展示幻灯*/
+@media (max-width: 768px) {  
+#myCarousel{
+    display: none
+  } 
+  /* ---------- 焦点图 ---------- */
+  .index_slide{width:auto;position:relative;display: block;padding-left: 0;}
+  .index_slide_range{height:480px;background:#fff;position:relative;overflow:hidden;padding-left: 0;}
+  .index_slide_range li a{display:block;width:auto;height:420px;background-position:top center;background-repeat:no-repeat;}
+  .index_slide_range .slidesjs-container{height:480px;}
+  .index_slide_range .slidesjs-pagination{width:180px;height:0;padding-left:850px;margin-left:-502px;position:absolute;left:50%;bottom:0;z-index:15;}
+  .index_slide_range .slidesjs-pagination li{display:inline-block;width:15px;height:15px;padding:7px;position:relative;top:-37px;}
+  .index_slide_range .slidesjs-pagination a{display:block;width:15px;height:0px;padding-top:15px;background:url(../images/ui.index.png) -3px 0 no-repeat;overflow:hidden;}
+  .index_slide_range .slidesjs-pagination a.active{background-position:-3px -17px;}
+    /* ---------- 焦点图 End ---------- */
 
+}
 
-
+@media (min-width: 768px) {
+#myCarousel{
+    display: block;
+  }
+  .index_slide{
+    display: none;
+  } 
+}
 
 
 

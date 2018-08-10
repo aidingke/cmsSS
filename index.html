@@ -217,6 +217,16 @@ window.onerror=function(){return true;}
 
 <!-- Large modal -->
 
+<ul id="indexSlide" class="index_slide_range">
+  <li><a href="#" style="background-image:url(http://139.199.168.180/upload/images/201808/15338920445815.jpg)" target="_blank"></a></li>
+  <li><a href="#" style="background-image:url(http://139.199.168.180/upload/images/201808/15338920769877.jpg)" target="_blank"></a></li>
+  <li><a href="#" style="background-image:url(http://139.199.168.180/upload/images/201808/15338921138645.gif)" target="_blank"></a></li>
+  <li><a href="#" style="background-image:url(http://139.199.168.180/upload/images/201808/15338920445815.jpg)" target="_blank"></a></li>
+  <li><a href="#" style="background-image:url(http://139.199.168.180/upload/images/201808/15338920769877.jpg)" target="_blank"></a></li>
+</ul>
+
+
+
 
 <!--
 <style>
@@ -303,6 +313,8 @@ width: 100%;
 </div>
 </div>
 <script src="/template/default_bootstrap/skin/js/owl.carousel.min.js"></script> 
+    <script src="/template/default_bootstrap/skin/js/jquery.slides.min.js"></script> 
+    
 <script>
 $(document).ready(function() {
   $("#owl-demo").owlCarousel({
@@ -310,6 +322,19 @@ items : 3,
 lazyLoad : true,
 navigation : true
   });
+
+//首屏幻灯片
+$('#indexSlide').slidesjs({
+width: 'auto',
+height: 480,
+navigation: false,
+play: {
+auto: true,
+interval: 2000,
+pauseOnHover: true,
+restartDelay: 2500
+}
+})
 
 });
 </script> 
@@ -711,6 +736,7 @@ Recruiting talents</div>
 <script>
         $(function() {
             $('#qrcode').qrcode({width: 150,height: 150,text: window.location.href});
+            
         });
 var tip=1;
 function closeFloat(){

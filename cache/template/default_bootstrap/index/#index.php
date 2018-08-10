@@ -35,6 +35,8 @@ width: 100%;
 <?php echo templatetag::tag('首页第四行滚动图片');?>
 </div>
 <script src="<?php echo $skin_path;?>/js/owl.carousel.min.js"></script> 
+    <script src="<?php echo $skin_path;?>/js/jquery.slides.min.js"></script> 
+    
 <script>
 $(document).ready(function() {
   $("#owl-demo").owlCarousel({
@@ -42,6 +44,19 @@ items : 3,
 lazyLoad : true,
 navigation : true
   });
+
+//首屏幻灯片
+$('#indexSlide').slidesjs({
+width: 'auto',
+height: 480,
+navigation: false,
+play: {
+auto: true,
+interval: 2000,
+pauseOnHover: true,
+restartDelay: 2500
+}
+})
 
 });
 </script> 
