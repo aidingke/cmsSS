@@ -895,7 +895,7 @@
 
 //幻灯宽度[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置幻灯片的显示宽度！" /></span>]
 
-'slide_height'=>'750',
+'slide_height'=>'570',
 
 //幻灯高度[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置幻灯片的显示高度！" /></span>]
 
@@ -934,81 +934,81 @@
 
 
 
-'slide_pic1'=>'/upload/images/201807/15311197956155.jpg',
+'slide_pic1'=>'/upload/images/201808/15338709398163.jpg',
 
 //图片1地址[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="上传幻灯中的图片！" /></span>]=>image
 
-'slide_pic1_title'=>'伊万卡哈哈哈',
+'slide_pic1_title'=>'装电梯，找梯幕TiMoo！',
 
 //图片1标题[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写幻灯中的标题！" /></span>]
 
-'slide_pic1_info'=>'',
+'slide_pic1_info'=>'乘客系列电梯秉承先进技术精髓，结合节能环保新理念，具有安全、舒适、节能等突出优势，为各类住宅提供可靠、高效的运行方案',
 
 //图片1副标题[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写幻灯中的副标题！" /></span>]
 
-'slide_pic1_url'=>'https://www.baidu.com',
+'slide_pic1_url'=>'javascript:;',
 
 //图片1链接地址[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="注意链接中的&要用%26替换！" /></span>]
 
-'slide_pic2'=>'/upload/images/201807/15311198201535.jpg', 
+'slide_pic2'=>'/upload/images/201808/15338710391067.jpg', 
 
 //图片2地址[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="上传幻灯中的图片！" /></span>]=>image
 
-'slide_pic2_title'=>'海量精美模板免费下载', 
+'slide_pic2_title'=>'旧楼加装电梯', 
 
 //图片2标题[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写幻灯中的标题！" /></span>]
 
-'slide_pic2_info'=>'一款基于 PHP+Mysql 架构的网站内容管理系统，也是一个 PHP 开发平台。 采用模块化方式开发，功能易用便于扩展，可面向大中型站点提供重量级网站建设解决方案。',
+'slide_pic2_info'=>'市区系列电梯重视电梯与家的融合度，从家人的需求去考虑运载的功能性，从家宅的建筑风格去考虑电梯的装潢设计，让家 与 电梯融为一体。',
 
 //图片2副标题[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写幻灯中的副标题！" /></span>]
 
-'slide_pic2_url'=>'http://www.aidingke.com', 
+'slide_pic2_url'=>'javascript:;', 
 
 //图片2链接地址[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="注意链接中的&要用%26替换！" /></span>]
 
-'slide_pic3'=>'/images/slide/banner03.jpg', 
+'slide_pic3'=>'/upload/images/201808/15338711187468.jpg', 
 
 //图片3地址[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="上传幻灯中的图片！" /></span>]=>image
 
-'slide_pic3_title'=>'内置推广模块的企业网站管理系统！',
+'slide_pic3_title'=>'城市电梯加装',
 
 //图片3标题[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写幻灯中的标题！" /></span>]
 
-'slide_pic3_info'=>'内置推广联盟模块的企业网站系统，为企业在营销推广方面，提供了非常便捷的方法和功能。通过推广联盟，企业可针对联盟会员进行统计外链发布数量，通过外链访问的流量统计，并可计算出通过外链而注册的企业用户数量。',
+'slide_pic3_info'=>'广泛适用于商务类、酒店以及高档商场等各种场所，在提供完美运载服务的同时可为建筑增添一份时尚艺术',
 
 //图片3副标题[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写幻灯中的副标题！" /></span>]
 
-'slide_pic3_url'=>'#',
+'slide_pic3_url'=>'javascript:;',
 
 //图片3链接地址[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="注意链接中的&要用%26替换！" /></span>]
 
-'slide_pic4'=>'/upload/images/201807/15311203447673.gif',
+'slide_pic4'=>'/upload/images/201808/15338712174674.jpg',
 
 //图片4地址[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="上传幻灯中的图片！" /></span>]=>image
 
-'slide_pic4_title'=>'欢迎公司及工作室参与分享计划', //图片4标题[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写幻灯中的标题！" /></span>]
+'slide_pic4_title'=>'', //图片4标题[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写幻灯中的标题！" /></span>]
 
-'slide_pic4_info'=>'一款基于 PHP+Mysql 架构的网站内容管理系统，也是一个 PHP 开发平台。 采用模块化方式开发，功能易用便于扩展，可面向大中型站点提供重量级网站建设解决方案。',
+'slide_pic4_info'=>'',
 
 //图片4副标题[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写幻灯中的副标题！" /></span>]
 
-'slide_pic4_url'=>'#',
+'slide_pic4_url'=>'javascript:;',
 
 //图片4链接地址[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="注意链接中的&要用%26替换！" /></span>]
 
-'slide_pic5'=>'/images/slide/banner05.jpg',
+'slide_pic5'=>'/upload/images/201808/15338811547094.jpg',
 
 //图片5地址[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="上传幻灯中的图片！" /></span>]=>image
 
-'slide_pic5_title'=>'服务/售后/程序多重升级', 
+'slide_pic5_title'=>'从家人的需求去考虑运载的功能性', 
 
 //图片5标题[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写幻灯中的标题！" /></span>]
 
-'slide_pic5_info'=>'一款基于 PHP+Mysql 架构的网站内容管理系统，也是一个 PHP 开发平台。 采用模块化方式开发，功能易用便于扩展，可面向大中型站点提供重量级网站建设解决方案。',
+'slide_pic5_info'=>'市区系列电梯重视电梯与家的融合度，从家人的需求去考虑运载的功能性，从家宅的建筑风格去考虑电梯的装潢设计，让家 与 电梯融为一体。',
 
 //图片5副标题[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写幻灯中的副标题！" /></span>]
 
-'slide_pic5_url'=>'#',
+'slide_pic5_url'=>'javascript:;',
 
 //图片5链接地址[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="注意链接中的&要用%26替换！" /></span>]
 

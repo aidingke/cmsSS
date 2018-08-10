@@ -28,7 +28,9 @@
 
  <?php if(get('slide_number')=='1') { ?>
  <div class="item active">
-          <img class="first-slide" src="<?php echo get(slide_pic1);?>" alt="<?php echo get(slide_pic1_title);?>">
+          <a href="<?php echo get(slide_pic1_url);?>" target="_blank">
+            <img class="first-slide" src="<?php echo get(slide_pic1);?>" alt="<?php echo get(slide_pic1_title);?>">
+          </a>
           <div class="container">
             <div class="carousel-caption">
               <h3 class="wow bounceInDown" data-wow-delay="0.5s"><?php echo get(slide_pic1_title);?></h3>
@@ -39,7 +41,9 @@
         </div>
  <?php } elseif (get('slide_number')=='2') { ?>
 <div class="item active">
-          <img class="first-slide" src="<?php echo get(slide_pic1);?>" alt="<?php echo get(slide_pic1_title);?>">
+          <a href="<?php echo get(slide_pic1_url);?>" target="_blank">
+            <img class="first-slide" src="<?php echo get(slide_pic1);?>" alt="<?php echo get(slide_pic1_title);?>">
+          </a>
           <div class="container">
             <div class="carousel-caption">
               <h3 class="wow bounceInDown" data-wow-delay="0.5s"><?php echo get(slide_pic1_title);?></h3>
@@ -50,8 +54,11 @@
         </div>
 
         <div class="item">
-          <img class="first-slide" src="<?php echo get(slide_pic2);?>" alt="<?php echo get(slide_pic2_title);?>">
-          <div class="container">
+          <!-- <img class="first-slide" src="<?php echo get(slide_pic2);?>" alt="<?php echo get(slide_pic2_title);?>"> -->
+          <a href="<?php echo get(slide_pic2_url);?>" target="_blank">
+            <img class="first-slide" src="<?php echo get(slide_pic1);?>" alt="<?php echo get(slide_pic1_title);?>">
+          </a>
+          <div class="container hid">
             <div class="carousel-caption">
               <h3 class="wow bounceInDown" data-wow-delay="0.5s"><?php echo get(slide_pic2_title);?></h3>
               <p class="wow bounceIn" data-wow-delay="0.5s"><?php echo get(slide_pic2_info);?></p>
@@ -61,7 +68,9 @@
         </div>
  <?php } elseif (get('slide_number')=='3') { ?>
 <div class="item active">
-          <img class="first-slide" src="<?php echo get(slide_pic1);?>" alt="<?php echo get(slide_pic1_title);?>">
+          <!-- <a href="<?php echo get(slide_pic1_url);?>" target="_blank"> -->
+            <img class="first-slide" src="<?php echo get(slide_pic1);?>" alt="<?php echo get(slide_pic1_title);?>">
+          <!-- </a> -->
           <div class="container">
             <div class="carousel-caption">
               <h3 class="wow bounceInDown" data-wow-delay="0.5s"><?php echo get(slide_pic1_title);?></h3>
@@ -72,8 +81,10 @@
         </div>
 
         <div class="item">
-          <img class="first-slide" src="<?php echo get(slide_pic2);?>" alt="<?php echo get(slide_pic2_title);?>">
-          <div class="container">
+          <a href="<?php echo get(slide_pic2_url);?>" target="_blank">
+            <img class="first-slide" src="<?php echo get(slide_pic2);?>" alt="<?php echo get(slide_pic2_title);?>">
+          </a>
+          <div class="container hid">
             <div class="carousel-caption">
               <h3 class="wow bounceInDown" data-wow-delay="0.5s"><?php echo get(slide_pic2_title);?></h3>
               <p class="wow bounceIn" data-wow-delay="0.5s"><?php echo get(slide_pic2_info);?></p>
@@ -83,7 +94,9 @@
         </div>
 
         <div class="item">
-         <img class="first-slide" src="<?php echo get(slide_pic3);?>" alt="<?php echo get(slide_pic3_title);?>">
+          <!-- <a href="<?php echo get(slide_pic3_url);?>" target="_blank"> -->
+            <img class="first-slide" src="<?php echo get(slide_pic3);?>" alt="<?php echo get(slide_pic3_title);?>">
+          <!-- </a>   -->
           <div class="container">
             <div class="carousel-caption">
               <h3 class="wow bounceInDown" data-wow-delay="0.5s"><?php echo get(slide_pic3_title);?></h3>
@@ -94,7 +107,9 @@
         </div>
  <?php } elseif (get('slide_number')=='4') { ?>
  <div class="item active">
+        <!-- <a href="<?php echo get(slide_pic1_url);?>" target="_blank"> -->
           <img class="first-slide" src="<?php echo get(slide_pic1);?>" alt="<?php echo get(slide_pic1_title);?>">
+        <!-- </a>   -->
           <div class="container">
             <div class="carousel-caption">
               <h3 class="wow bounceInDown" data-wow-delay="0.5s"><?php echo get(slide_pic1_title);?></h3>
@@ -105,8 +120,10 @@
         </div>
 
         <div class="item">
-          <img class="first-slide" src="<?php echo get(slide_pic2);?>" alt="<?php echo get(slide_pic2_title);?>">
-          <div class="container">
+          <a href="<?php echo get(slide_pic2_url);?>" target="_blank">
+            <img class="first-slide" src="<?php echo get(slide_pic2);?>" alt="<?php echo get(slide_pic2_title);?>">
+          </a>            
+          <div class="container hid">
             <div class="carousel-caption">
               <h3 class="wow bounceInDown" data-wow-delay="0.5s"><?php echo get(slide_pic2_title);?></h3>
               <p class="wow bounceIn" data-wow-delay="0.5s"><?php echo get(slide_pic2_info);?></p>
@@ -116,8 +133,10 @@
         </div>
 
         <div class="item">
-         <img class="first-slide" src="<?php echo get(slide_pic3);?>" alt="<?php echo get(slide_pic3_title);?>">
-          <div class="container">
+          <a href="<?php echo get(slide_pic3_url);?>" target="_blank">
+            <img class="first-slide" src="<?php echo get(slide_pic3);?>" alt="<?php echo get(slide_pic3_title);?>">
+          </a>  
+          <div class="container hid">
             <div class="carousel-caption">
               <h3 class="wow bounceInDown" data-wow-delay="0.5s"><?php echo get(slide_pic3_title);?></h3>
               <p class="wow bounceIn" data-wow-delay="0.5s"><?php echo get(slide_pic3_info);?></p>
@@ -127,8 +146,10 @@
         </div>
 
 <div class="item">
+      <a href="<?php echo get(slide_pic4_url);?>" target="_blank">
         <img class="first-slide" src="<?php echo get(slide_pic4);?>" alt="<?php echo get(slide_pic4_title);?>">
-          <div class="container">
+      </a>  
+          <div class="container hid">
             <div class="carousel-caption">
               <h3 class="wow bounceInDown" data-wow-delay="0.5s"><?php echo get(slide_pic4_title);?></h3>
               <p class="wow bounceIn" data-wow-delay="0.5s"><?php echo get(slide_pic4_info);?></p>
@@ -138,7 +159,9 @@
         </div>
 <?php } else { ?>
  <div class="item active">
+        <!-- <a href="<?php echo get(slide_pic1_url);?>" target="_blank"> -->
           <img class="first-slide" src="<?php echo get(slide_pic1);?>" alt="<?php echo get(slide_pic1_title);?>">
+        <!-- </a>   -->
           <div class="container">
             <div class="carousel-caption">
               <h3 class="wow bounceInDown" data-wow-delay="0.5s"><?php echo get(slide_pic1_title);?></h3>
@@ -149,8 +172,10 @@
         </div>
 
         <div class="item">
-          <img class="first-slide" src="<?php echo get(slide_pic2);?>" alt="<?php echo get(slide_pic2_title);?>">
-          <div class="container">
+          <a href="<?php echo get(slide_pic2_url);?>" target="_blank">
+            <img class="first-slide" src="<?php echo get(slide_pic2);?>" alt="<?php echo get(slide_pic2_title);?>">
+          </a>  
+          <div class="container hid">
             <div class="carousel-caption">
               <h3 class="wow bounceInDown" data-wow-delay="0.5s"><?php echo get(slide_pic2_title);?></h3>
               <p class="wow bounceIn" data-wow-delay="0.5s"><?php echo get(slide_pic2_info);?></p>
@@ -160,8 +185,10 @@
         </div>
 
         <div class="item">
-         <img class="first-slide" src="<?php echo get(slide_pic3);?>" alt="<?php echo get(slide_pic3_title);?>">
-          <div class="container">
+          <a href="<?php echo get(slide_pic3_url);?>" target="_blank">
+            <img class="first-slide" src="<?php echo get(slide_pic3);?>" alt="<?php echo get(slide_pic3_title);?>">
+          </a>  
+          <div class="container hid">
             <div class="carousel-caption">
               <h3 class="wow bounceInDown" data-wow-delay="0.5s"><?php echo get(slide_pic3_title);?></h3>
               <p class="wow bounceIn" data-wow-delay="0.5s"><?php echo get(slide_pic3_info);?></p>
@@ -171,8 +198,10 @@
         </div>
 
 <div class="item">
+      <a href="<?php echo get(slide_pic4_url);?>" target="_blank">
         <img class="first-slide" src="<?php echo get(slide_pic4);?>" alt="<?php echo get(slide_pic4_title);?>">
-          <div class="container">
+      </a>  
+          <div class="container hid">
             <div class="carousel-caption">
               <h3 class="wow bounceInDown" data-wow-delay="0.5s"><?php echo get(slide_pic4_title);?></h3>
               <p class="wow bounceIn" data-wow-delay="0.5s"><?php echo get(slide_pic4_info);?></p>
@@ -182,8 +211,10 @@
         </div>
 
 <div class="item">
+        <!-- <a href="<?php echo get(slide_pic5_url);?>" target="_blank"> -->
          <img class="first-slide" src="<?php echo get(slide_pic5);?>" alt="<?php echo get(slide_pic5_title);?>">
-          <div class="container">
+        <!-- </a>  -->
+          <div class="container ">
             <div class="carousel-caption">
               <h3 class="wow bounceInDown" data-wow-delay="0.5s"><?php echo get(slide_pic5_title);?></h3>
               <p class="wow bounceIn" data-wow-delay="0.5s"><?php echo get(slide_pic5_info);?></p>
