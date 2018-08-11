@@ -1186,7 +1186,7 @@ header.newstit{text-align:center;}
     display: none
   } 
   /* ---------- 焦点图 ---------- */
-.showImg {font-size: 0;background-color: #fff;margin-top: 63px;}
+.showImg {font-size: 0;background-color: #fff;margin-top: 63px;display: block;}
 .swiper-wrapper{padding-left: 0;}
 .swiper-slide {overflow: hidden;}
 .swiper-slide img{width: 100%}
@@ -1198,7 +1198,7 @@ header.newstit{text-align:center;}
 #myCarousel{
     display: block;
   }
-  .index_slide{
+  .showImg{
     display: none;
   } 
 }
