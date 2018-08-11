@@ -384,7 +384,10 @@ background:white;border:1px solid #ccc;
 .index-1 li .t1 { margin-top:-50px; }
 .index-1 li .t2 { bottom:0px; }
 }
-.index-3 {padding:50px 0px;background:url(../images/base/port.jpg) no-repeat;background-attachment: fixed;background-position: center;	background-size:100% 100%;	-webkit-background-size:100% 100%;	-moz-background-size:100% 100%;	-o-background-size:100% 100%;}
+.index-3 {padding:50px 0px;background: #F8F8F8;color: #999;
+  /*background:url(../images/base/port.jpg) no-repeat;background-attachment: fixed;background-position: center;	background-size:100% 100%;	
+  -webkit-background-size:100% 100%;	-moz-background-size:100% 100%;	-o-background-size:100% 100%;*/
+}
 
 .index-2 {padding:50px 0px;}
 .index-2 div div { padding:20px 30px; border:1px solid #eee;  -moz-box-shadow:0px 0px 10px #eee;
@@ -404,7 +407,7 @@ box-shadow:0px 0px 10px #eee; border-radius:3px;}
 
 .index-3 .btn {padding:10px 40px;border-radius:50px;}
 .index-3-left { /*height:240px; overflow:auto;*/ }
-.index-3-left p {text-indent: 2em;color: #fff;}
+.index-3-left p {text-indent: 2em;color: #999;}
 @media (max-width: 768px) {
 .index-3-left {margin-bottom:30px;}
 }

@@ -29,7 +29,14 @@
 </style>
 -->
 
-{tag_首页第四行栏目名称}
+<!-- {tag_首页第四行栏目名称} -->
+<div class="title">
+	<h3 class="wow fadeInDown animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
+		<a class="anli" href="" title="工程案例">工程案例</a></h3>
+	<p class="wow fadeIn animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">专注高端 精准定位 用心服务！成就，安全可靠的科技生活</p>
+</div>
+
+
 <div class="index-4">
 	<div id="owl-demo" class="owl-carousel wow fadeInDown" data-wow-delay="0.5s">
 	{tag_首页第四行滚动图片}
@@ -39,6 +46,8 @@
     
 	<script>
 		$(document).ready(function() {
+			$('.anli').attr('href',$('#navbar').find('li a').eq(2).attr('href'));
+
 		  $("#owl-demo").owlCarousel({
 			items : 3,
 			lazyLoad : true,
@@ -66,13 +75,17 @@
 
 
 
-	<div class="clearfix"></div>
-	<div class="container-fluid">
-	{loop special::listdata(1) $special}
-	<a href="{$special['url']}" title="{$special['title']}"><center><img src="{$special['banner']}" alt="{$special['title']}" class="img-responsive" class="wow fadeIn" data-wow-delay="0.5s" /></center></a>
-	{/loop}
+	<div class="hid">
+		<div class="clearfix"></div>
+		<div class="container-fluid">
+		{loop special::listdata(1) $special}
+		<a href="{$special['url']}" title="{$special['title']}"><center><img src="{$special['banner']}" alt="{$special['title']}" class="img-responsive" class="wow fadeIn" data-wow-delay="0.5s" /></center></a>
+		{/loop}
+		</div>
+		<div class="clearfix"></div>
 	</div>
-	<div class="clearfix"></div>
+
+
 </div>
 
 
