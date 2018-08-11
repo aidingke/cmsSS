@@ -1,6 +1,7 @@
 {template 'header.html'}
-
+<link href="{$skin_path}/css/swiper-3.3.1.min.css" rel="stylesheet">
 {template 'system/slide.html'}
+
 
 <!--
 <style>
@@ -34,7 +35,7 @@
 	{tag_首页第四行滚动图片}
 	</div>
 	<script src="{$skin_path}/js/owl.carousel.min.js"></script> 
-    <script src="{$skin_path}/js/jquery.slides.min.js"></script> 
+    <script src="{$skin_path}/js/swiper.min.js"></script> 
     
 	<script>
 		$(document).ready(function() {
@@ -44,18 +45,19 @@
 			navigation : true
 		  });
 
-			//首屏幻灯片
-			$('#indexSlide').slidesjs({
-				width: 'auto',
-				height: 480,
-				navigation: false,
-				play: {
-					auto: true,
-					interval: 2000,
-					pauseOnHover: true,
-					restartDelay: 2500
+			new Swiper('.swiper-container',{
+				autoplay:3000,
+				loop:true,
+				autoplayDisableOnInteraction : false,
+				onImagesReady:function(){
+					$(".swiper-slide").height($(".swiper-slide:eq(0) .play").height());
 				}
-			})
+			});
+			if (window.navigator.userAgent.indexOf("Mobile") > -1) {
+				$('#myCarousel').remove()
+		   	}else{
+		   		$('.showImg').remove()
+		   	}
 			
 		});
 	</script> 

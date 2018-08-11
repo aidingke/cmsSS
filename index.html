@@ -124,7 +124,7 @@ window.onerror=function(){return true;}
 
 
 
-
+<link href="/template/default_bootstrap/skin/css/swiper-3.3.1.min.css" rel="stylesheet">
  <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -140,7 +140,7 @@ window.onerror=function(){return true;}
         <!-- <a href="javascript:;" target="_blank"> -->
           <img class="first-slide" src="/upload/images/201808/15338709398163.jpg" alt="装电梯，找梯幕TiMoo！">
         <!-- </a>   -->
-          <div class="container">
+          <div class="container hid">
             <div class="carousel-caption">
               <h3 class="wow bounceInDown" data-wow-delay="0.5s">装电梯，找梯幕TiMoo！</h3>
               <p class="wow bounceIn" data-wow-delay="0.5s">乘客系列电梯秉承先进技术精髓，结合节能环保新理念，具有安全、舒适、节能等突出优势，为各类住宅提供可靠、高效的运行方案</p>
@@ -217,15 +217,36 @@ window.onerror=function(){return true;}
 
 <!-- Large modal -->
 
-<ul id="indexSlide" class="index_slide_range">
-  <li><a href="#" style="background-image:url(http://139.199.168.180/upload/images/201808/15338920445815.jpg)" target="_blank"></a></li>
-  <li><a href="#" style="background-image:url(http://139.199.168.180/upload/images/201808/15338920769877.jpg)" target="_blank"></a></li>
-  <li><a href="#" style="background-image:url(http://139.199.168.180/upload/images/201808/15338921138645.gif)" target="_blank"></a></li>
-  <li><a href="#" style="background-image:url(http://139.199.168.180/upload/images/201808/15338920445815.jpg)" target="_blank"></a></li>
-  <li><a href="#" style="background-image:url(http://139.199.168.180/upload/images/201808/15338920769877.jpg)" target="_blank"></a></li>
+<!-- <ul id="indexSlide" class="index_slide_range">
+  <li><a href="#" target="_blank"><img src="http://139.199.168.180/upload/images/201808/15338920445815.jpg" /></a></li>
+  <li><a href="#" target="_blank"><img src="http://139.199.168.180/upload/images/201808/15338920769877.jpg" /></a></li>
+  <li><a href="#" target="_blank"><img src="http://139.199.168.180/upload/images/201808/15338921138645.gif" /></a></li>
+  <li><a href="#" target="_blank"><img src="http://139.199.168.180/upload/images/201808/15338920445815.jpg" /></a></li>
+  <li><a href="#" target="_blank"><img src="http://139.199.168.180/upload/images/201808/15338920769877.jpg" /></a></li>
 </ul>
+ -->
 
-
+<section class="showImg">
+  <section class="swiper-container">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide" >               
+          <img src="http://139.199.168.180/upload/images/201808/15338920445815.jpg" class="">
+        </li>
+        <li class="swiper-slide" >
+          <img src="http://139.199.168.180/upload/images/201808/15338920769877.jpg" class="">
+        </li>
+        <li class="swiper-slide" >            
+          <img src="http://139.199.168.180/upload/images/201808/15338921138645.gif" class="">
+        </li>
+        <li class="swiper-slide" >               
+          <img src="http://139.199.168.180/upload/images/201808/15338920445815.jpg" class="">
+        </li>
+        <li class="swiper-slide" >
+          <img src="http://139.199.168.180/upload/images/201808/15338920769877.jpg" class="">
+        </li>
+      </ul>
+  </section>
+</section>
 
 
 <!--
@@ -313,7 +334,7 @@ width: 100%;
 </div>
 </div>
 <script src="/template/default_bootstrap/skin/js/owl.carousel.min.js"></script> 
-    <script src="/template/default_bootstrap/skin/js/jquery.slides.min.js"></script> 
+    <script src="/template/default_bootstrap/skin/js/swiper.min.js"></script> 
     
 <script>
 $(document).ready(function() {
@@ -323,18 +344,19 @@ lazyLoad : true,
 navigation : true
   });
 
-//首屏幻灯片
-$('#indexSlide').slidesjs({
-width: 'auto',
-height: 480,
-navigation: false,
-play: {
-auto: true,
-interval: 2000,
-pauseOnHover: true,
-restartDelay: 2500
+new Swiper('.swiper-container',{
+autoplay:3000,
+loop:true,
+autoplayDisableOnInteraction : false,
+onImagesReady:function(){
+$(".swiper-slide").height($(".swiper-slide:eq(0) .play").height());
 }
-})
+});
+if (window.navigator.userAgent.indexOf("Mobile") > -1) {
+$('#myCarousel').remove()
+   	}else{
+   		$('.showImg').remove()
+   	}
 
 });
 </script> 
@@ -736,7 +758,6 @@ Recruiting talents</div>
 <script>
         $(function() {
             $('#qrcode').qrcode({width: 150,height: 150,text: window.location.href});
-            
         });
 var tip=1;
 function closeFloat(){
@@ -1043,7 +1064,7 @@ $(function(){
 
 <script type="text/javascript" src="/js/common.js"></script>
 
-<script>
+<!-- <script>
 (function(){
     var bp = document.createElement('script');
     var curProtocol = window.location.protocol.split(':')[0];
@@ -1057,6 +1078,7 @@ $(function(){
     s.parentNode.insertBefore(bp, s);
 })();
 </script>
+ -->
 
 
 
