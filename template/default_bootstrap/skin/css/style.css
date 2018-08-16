@@ -384,7 +384,7 @@ background:white;border:1px solid #ccc;
 .index-1 li .t1 { margin-top:-50px; }
 .index-1 li .t2 { bottom:0px; }
 }
-.index-3 {padding:50px 0px;background: #F8F8F8;color: #999;
+.index-3 {padding:50px 0px;background: #eee;color: #999;
   /*background:url(../images/base/port.jpg) no-repeat;background-attachment: fixed;background-position: center;	background-size:100% 100%;	
   -webkit-background-size:100% 100%;	-moz-background-size:100% 100%;	-o-background-size:100% 100%;*/
 }
@@ -407,7 +407,7 @@ box-shadow:0px 0px 10px #eee; border-radius:3px;}
 
 .index-3 .btn {padding:10px 40px;border-radius:50px;}
 .index-3-left { /*height:240px; overflow:auto;*/ }
-.index-3-left p {text-indent: 2em;color: #999;}
+.index-3-left p {/* text-indent: 2em; */color: #999;}
 @media (max-width: 768px) {
 .index-3-left {margin-bottom:30px;}
 }
@@ -479,7 +479,6 @@ margin: 0 auto;
 .projectitem img,
 .index-1 img,
 .index-2 img,
-.index-3 img,
 .owl-item img
 {
  -moz-box-shadow:0px 0px 10px #888;
@@ -1182,9 +1181,10 @@ header.newstit{text-align:center;}
 }
 
 /*根据设备显示首页轮播*/
-
+.mt79{margin-top: 35%}
 /*手机展示幻灯*/
 @media (max-width: 768px) {  
+.mt79{margin-top: 1%}
 #myCarousel{
     display: none
   } 
@@ -1205,9 +1205,51 @@ header.newstit{text-align:center;}
     display: none;
   } 
 }
+.index-3{background:url(../images/base/6row.jpg) no-repeat 0 bottom #E7E7E7;/*background-attachment: fixed;background-position: center; background-size:100% 100%;  
+  -webkit-background-size:100% 100%;  -moz-background-size:100% 100%; -o-background-size:100% 100%;*/}
+.index-3 .row{width: 100%;margin: 0;padding: 0;}
+.index-3 .col{
+  /*width: 30%;*/
+  border: 2px solid #e3e3e3;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  /*margin: 0 10px 10px 10px;*/
+  background: #fff;}
+.index-3 .col img{
+  max-width: 130px;
+  max-height: 130px;
+  margin-top: 80px;
+} 
+.index-3 .col span{
+  display: block;
+  font-size: 30px;
+  padding: 20px 0px 49px 0px;
+  text-shadow: 1px 2px 3px #eee;
+  color: #666;
+  /*color: #165aa5;*/
+}
+.index-3 .col span.indexCsty{
+  padding: 50px 0 25px;
+  color: #ddd;
+}                 
+                    
 
-
-
+.row{width: 100%;margin: 0;padding: 0;}
+.index6 .col{
+  width: 20%;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  /*margin: 0 10px 10px 10px;*/
+  background: #fff;
+}
+.index6 .col img{
+  /*max-width: 130px;
+  max-height: 130px;
+  margin-top: 80px;*/
+} 
 
 
 
