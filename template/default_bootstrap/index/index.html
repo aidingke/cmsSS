@@ -63,9 +63,23 @@
 				}
 			});
 			if (window.navigator.userAgent.indexOf("Mobile") > -1) {
+				//手机版
 				$('#myCarousel').remove()
+
+				$(".swiper-wrapper img").each(function(index, domEle){
+				   var src1 = $(domEle).attr('src1')
+				   $(domEle).attr("src",src1);
+				 });
+
+
 		   	}else{
+		   		//pc版
 		   		$('.showImg').remove()
+		   	
+				$(".carousel-inner img").each(function(index, domEle){
+				   var src1 = $(domEle).attr('src1')
+				   $(domEle).attr("src",src1);
+				 });
 		   	}
 			
 		});
