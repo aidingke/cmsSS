@@ -22,12 +22,12 @@
 	<div class="product_info col-sm-6">
 		<div>
 		<table>
-				<tr>
+				<tr class="hid">
 					<th>{lang('dong_size')}：</th>
 					<td>{$archive['my_size']}</td>
 				</tr>
 				<tr>
-					<th>{lang('nowdownload')}：</th>
+					<th style="color:red;">{lang('nowdownload')}：</th>
 					 <td>{if $archive['attachment_path']}
 					{attachment_js($archive['aid'])}
 					{else}
@@ -50,7 +50,7 @@
 				<th>{lang('adddate')}：</th>
 				<td>{$archive['adddate']}</td>
 			</tr>
-			<tr>
+			<tr class="hid">
 				<th>{lang('strgrades')}：</th>
 				<td>{$archive['strgrade']}</td>
 			</tr>
@@ -92,8 +92,8 @@
 </div><!-- /container -->
 
 
-<div class="blank60"></div>
-<div class="blank60"></div>
+<div class="blank60 hid"></div>
+<div class="blank60 hid"></div>
 <hr class="featurette-divider">
 
 
@@ -142,7 +142,7 @@
 	{else}
 	<strong>{lang('archivep')}</strong>{lang('nopage')}
 	{/if}
-	<div class="blank10"></div>
+	<div class="blank10 hid"></div>
 	{if $archive['n']['aid']}
 	 <strong>{lang('archiven')}</strong><a href="{$archive['n']['url']}">{$archive['n']['title']}</a>
 	{else}
@@ -183,7 +183,7 @@
 <!-- 相关文章结束 -->
 
 
-<div class="blank60"></div>
+<div class="blank60 hid"></div>
 <!-- 评论框开始 -->
 {template 'comment/comment.html'}
 <!-- 评论框结束 -->
@@ -198,10 +198,11 @@
 </div>
 <!-- s/shopping 购物车 -->
 
-
+<div class="hid">
 <!-- 页底推荐图文产品开始 -->
 {tag_内容页底图文产品三条}
 <!-- 页底推荐图文产品结束 -->
+</div>
 
 <script src="{$skin_path}/js/jQuery.autoIMG.js"></script>
 <script type="text/javascript">
