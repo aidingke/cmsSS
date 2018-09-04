@@ -1205,7 +1205,7 @@ header.newstit{text-align:center;}
     display: none;
   } 
 }
-.index-3{background:url(../images/base/6row.jpg) no-repeat 0 bottom #E7E7E7;/*background-attachment: fixed;background-position: center; background-size:100% 100%;  
+.index-3{/*background:url(../images/base/6row.jpg) no-repeat 0 bottom #E7E7E7;*//*background-attachment: fixed;background-position: center; background-size:100% 100%;  
   -webkit-background-size:100% 100%;  -moz-background-size:100% 100%; -o-background-size:100% 100%;*/}
 .index-3 .row{width: 100%;margin: 0;padding: 0;}
 .index-3 .col{
