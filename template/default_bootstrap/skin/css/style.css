@@ -1207,6 +1207,18 @@ header.newstit{text-align:center;}
 }
 .index-3{/*background:url(../images/base/6row.jpg) no-repeat 0 bottom #E7E7E7;*//*background-attachment: fixed;background-position: center; background-size:100% 100%;  
   -webkit-background-size:100% 100%;  -moz-background-size:100% 100%; -o-background-size:100% 100%;*/}
+#mainMap{width: 100%; height: 700px;}
+.map_img{width: 980px;margin: 0 auto;margin-top: -686px;height: 686px;}
+
+@media (max-width: 768px) {
+#mainMap{
+    height: 500px;
+  }
+  .map_img{margin: 0 auto;margin-top: -418px;height: 686px;width: 100%} 
+}
+
+
+
 .index-3 .row{width: 100%;margin: 0;padding: 0;}
 .index-3 .col{
   /*width: 30%;*/
