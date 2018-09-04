@@ -5,7 +5,7 @@ body
 li {list-style:none;}
 .f_left{float:left;}
 .f_right{float:right;}
-
+.p_rel{position: relative;}
 a {transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; color:#333;text-decoration:none;}
 a:hover {text-decoration:none;}
 .hid{display:none;}
