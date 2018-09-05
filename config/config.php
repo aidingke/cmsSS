@@ -11,7 +11,6 @@
 ),
 
 'install_admin'=>'admin',
-
 //site-网站信息{
 'site_url'=>'http://localhost/',
 
