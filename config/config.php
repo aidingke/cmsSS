@@ -3,7 +3,7 @@
 'database'=>array(
 'hostname'=>'localhost',//MySQL服务器
 'user'=>'root',//用户名
-'password'=>'root',//密码
+'password'=>'i83d627d',//密码
 'database'=>'cmseasy',//数据库名
 'prefix'=>'cmseasy_',//表前缀
 'encoding'=>'utf8',//编码
