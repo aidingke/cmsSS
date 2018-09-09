@@ -1,17 +1,17 @@
 <script>
     $(function(){
         $('#frmGuestbookSubmit').submit(function() {
-            if($('#nickname').val() == ''){
-                alert("请输入用户名！");
-                $('#nickname').focus();
-                return false;
-            }
+            // if($('#nickname').val() == ''){
+            //     alert("请输入用户名！");
+            //     $('#nickname').focus();
+            //     return false;
+            // }
            
-            if($('#guestemail').val() == ''){
-                alert("<?php echo lang('please_fill_in_the_mailbox');?>");
-                $('#guestemail').focus();
-                return false;
-            }
+            // if($('#guestemail').val() == ''){
+            //     alert("<?php echo lang('please_fill_in_the_mailbox');?>");
+            //     $('#guestemail').focus();
+            //     return false;
+            // }
             if($('#guesttel').val() == ''){
                 alert('请输入有效的手机号码！');
                 $('#guesttel').focus();
@@ -26,14 +26,14 @@
         });
     });
 </script>
-<form id="frmGuestbookSubmit" method="post" action="<?php echo url('guestbook/index');?>" name="frmGuestbookSubmit" class="form_message">
+<form id="frmGuestbookSubmit" method="post" action="<?php echo url('guestbook/index');?>" name="frmGuestbookSubmit" class="form_message" style="padding-top:20px;">
 
-<div id="guestbook_name">
+<div id="guestbook_name" class="hid">
 <?php echo lang('name');?><span>Name</span>
 <input name="nickname" id="nickname" value="" class="guestbook_input" />
 </div>
 
-<div id="guestbook_email">
+<div id="guestbook_email" class="hid">
 <?php echo lang('email');?><span>Email</span>
 <input name="guestemail" id="guestemail" value="" class="guestbook_input" />
 </div>
@@ -42,9 +42,9 @@
 <input name="guesttel" id="guesttel" value="" class="guestbook_input" />
 </div>
 
-<div id="guestbook_title">
+<div id="guestbook_title" class="hid">
 <?php echo lang('title');?><span>Title</span>
-<input type="text" name="title" id="title" value="" class="guestbook_input" />
+<input type="text" name="title" id="title" value="客户留言" class="guestbook_input" />
 </div>
 
 <div id="guestbook_textarea">

@@ -36,7 +36,7 @@
 		<ul>
 		  <li>
 			<label>姓名：</label>
-			<input name="nickname" id="fl_name" class="float_input" type="text">
+			<input name="nickname" id="fl_name" class="float_input" type="text" value="匿名客户">
 		  </li>
 		  <li>
 			<label>电话：</label>
@@ -84,15 +84,15 @@
 
 
 
-<div class="row hid">
-<div class="foot-contactus col-xs-12 col-sm-6 col-md-5 col-lg-3">
+<div class="row">
+<div class="foot-contactus col-xs-12 col-sm-6 col-md-5 col-lg-3 hid">
 
 <ul>
 <li>{lang('address')}：{get('address')}</li>
 <li>{lang('postcode')}：{get('postcode')}</li>
 <li>{lang('tel')}：{get('tel')}</li>
 <li>{lang('mobile')}：{get('mobile')}</li>
-<li>{lang('fax')}：{get('fax')}</li>
+<li >{lang('fax')}：{get('fax')}</li>
 <li>{lang('email')}：{get('email')}</li>
 </ul>
 </div>
@@ -101,7 +101,7 @@
 {callGuestbook()}
 </div>
 
-<div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4 fweixin">
+<div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4 fweixin hid">
 <div class="row">
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 {if config::get('qrcodes')=='1'}
