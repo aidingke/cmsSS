@@ -1,11 +1,11 @@
 <script>
     $(function(){
         $('#frmGuestbookSubmit').submit(function() {
-            // if($('#nickname').val() == ''){
-            //     alert("请输入用户名！");
-            //     $('#nickname').focus();
-            //     return false;
-            // }
+            if($('#nickname').val() == ''){
+                alert("请输入用户名！");
+                $('#nickname').focus();
+                return false;
+            }
            
             // if($('#guestemail').val() == ''){
             //     alert("<?php echo lang('please_fill_in_the_mailbox');?>");
@@ -28,7 +28,7 @@
 </script>
 <form id="frmGuestbookSubmit" method="post" action="<?php echo url('guestbook/index');?>" name="frmGuestbookSubmit" class="form_message" style="padding-top:20px;">
 
-<div id="guestbook_name" class="hid">
+<div id="guestbook_name" class="" style="width:100%">
 <?php echo lang('name');?><span>Name</span>
 <input name="nickname" id="nickname" value="" class="guestbook_input" />
 </div>
@@ -37,7 +37,7 @@
 <?php echo lang('email');?><span>Email</span>
 <input name="guestemail" id="guestemail" value="" class="guestbook_input" />
 </div>
-<div id="guestbook_tel">
+<div id="guestbook_tel" style="width:100%">
 <?php echo lang('guesttel');?><span>Tel</span>
 <input name="guesttel" id="guesttel" value="" class="guestbook_input" />
 </div>
