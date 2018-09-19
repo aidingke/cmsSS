@@ -35,7 +35,7 @@ transition: 600ms;
 
 .navbar-nav {margin-right:10px;}
 .navbar-default .navbar-nav>li{background: #333333;color:#fff;}
-.navbar-default .navbar-nav>li> a {color:#fff;padding: 20px 19px}
+.navbar-default .navbar-nav>li> a {color:#fff;padding: 18px 19px}
 .navbar-default .navbar-nav>li> a:hover{color:#fff;background: #ffb600;}
 .navbar-default .navbar-nav>li.active>a,.navbar-default .navbar-nav>li.active>a:hover{color:#fff;background: #FFB600}
 /* logo */
