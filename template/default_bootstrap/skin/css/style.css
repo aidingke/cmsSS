@@ -198,7 +198,7 @@ bottom:10%;
 .foot .foot-nav dl dt b { position: absolute; display: block; width: 39%; height: 3px; left: 0; bottom: -2px; background-color: #fff; }
 .foot .foot-nav dl dd { line-height: 30px; }
 .foot .foot-nav dl dd a { font-size: 16px;  }
-.foot .copyright { clear:both;  margin:45px 0px 30px 0px; text-align: center; color:#9b9b9b; }
+.foot .copyright { clear:both;  margin:45px 0px 70px 0px; text-align: center; color:#9b9b9b; }
 
 .foot-guestbook {color:#9b9b9b; }
 
