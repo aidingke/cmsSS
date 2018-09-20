@@ -36,10 +36,11 @@ document.oncontextmenu=stop;
 {/if}
 
 <!-- nav -->
-<nav class="navbar navbar-default{if get('nav_top')=='1'} navbar-fixed-top{/if}">
+<nav id="headnavbar" class="navbar navbar-default{if get('nav_top')=='1'} navbar-fixed-top{/if}">
 <div class="container">
 <div class="navbar-header">
-<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> -->
+<button type="button" class="navbar-toggle collapsed iconMenu" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 <span class="sr-only">{get('sitename')}</span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
@@ -63,7 +64,7 @@ document.oncontextmenu=stop;
 </ul>
 </div>
 <!-- logo -->
-<a href="{$base_url}/" class="navbar-brand text-center"><img src="{get('site_logo')}" class="img-responsive" alt="{get('sitename')}" /></a>
+<a href="{$base_url}/" class="navbar-brand text-center"><img id="logoimg" src="{get('site_logo')}" class="img-responsive" alt="{get('sitename')}" /></a>
 <!-- logo end -->
 </div>
 
