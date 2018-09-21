@@ -146,7 +146,7 @@ iframe {
   margin-right: 10px;
 }
 .windowBar {
-  min-width: 1200px;
+  /*min-width: 1200px;*/
   background-color: #f9f9f9;
 }
 .windowBar .footer {
@@ -260,7 +260,7 @@ iframe {
   width: 25%;
 }
 .windowBar .pageCon-list {
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   margin: 40px auto;
   background-color: #fff;
   font-size: 0;
@@ -274,9 +274,11 @@ iframe {
 }
 .windowBar .pageCon-list .pageCon-left {
   display: inline-block;
+  height:490px;
   width: 50%;
   overflow: hidden;
 }
+.windowBar .pageCon-list .pageCon-left.heigh1{height: 680px;}
 .windowBar .pageCon-list .pageCon-left img {
   width: 100%;
 }
@@ -293,7 +295,7 @@ iframe {
 }
 .windowBar .pageCon-list .pageCon-right .pageCon-right-con {
   position: absolute;
-  max-width: 80%;
+  max-width: 86%;
   left: 10%;
   top: 10%;
 }
@@ -611,3 +613,21 @@ iframe {
   animation: shake .7s infinite;
 }
 .talentsPlat_item_text{display: none}
+.h500{height: 500px;}
+
+.windowBar .pageCon-list .pageCon-item.on{display: block;}
+@media (max-width: 768px) { 
+  .windowBar .pageCon-list .pageCon-left{
+    width: auto;height: auto;
+  }
+  .windowBar .pageCon-list .pageCon-left.heigh1{
+    height: auto;
+  }
+  .windowBar .pageCon-list .pageCon-right{
+    position: relative;width: auto;padding-bottom: 10px;
+  }
+  .windowBar .pageCon-list .pageCon-right .pageCon-right-con{
+    position: relative;
+  }
+  
+}

@@ -33,7 +33,7 @@
 			<div class="pageCon-list">
 				<!--卡片1-->
 				<div class="pageCon-item active">
-					<div class="pageCon-left" style="height:490px;">
+					<div class="pageCon-left heigh1">
 						<img src="/images/aboutUs01.jpg" style="margin-top:-20px;">
 					</div>
 					<div class="pageCon-right">
@@ -63,9 +63,9 @@
 				</div>
 				<!--卡片1 end-->
 				<!--卡片2-->
-				<div class="pageCon-item">
-					<div class="map" style="width:700px;height:550px;overflow:hidden;margin:0 auto;">
-						<div id="mainMap" style="width: 700px; height: 550px;">
+				<div class="pageCon-item on">
+					<div class="map" style="width:100%;overflow:hidden;margin:0 auto;" class="h500">
+						<div id="mainMap" style="width: 100%;" class="h500">
 							
 						</div>
 					</div>				
@@ -406,6 +406,9 @@
 <script src="{$skin_path}/lib/chart/echarts.js"></script>
 <script type="text/javascript">
 		$(function(){
+			setTimeout(function(){
+				$('.pageCon-item').eq(1).removeClass('on')
+			},3000)
 		getEcharts()
 		    //地图
 		function getEcharts(){
