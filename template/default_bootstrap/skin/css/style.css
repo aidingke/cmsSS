@@ -1142,7 +1142,7 @@ xcredits
 	cursor: pointer;
 }
 .iconfont{display: block;margin-bottom: -0.4rem;}
-
+.iconfont img{width: auto;}
 #bannerDiv{
 	width: 100%;
     height: 380px;
@@ -1638,6 +1638,55 @@ header .am-fl.am-fl img {
   font-size: .42rem;
   color: #00acff;
   font-weight: bold;
+}
+
+@media (max-width: 768px) { 
+.act #float{
+    bottom: 0;
+  } 
+  /*手机版留言*/
+  #float{
+    width: 100%;
+    background: #ddd;
+    z-index: 2000;
+    bottom: -70%;
+    transition-duration: 500ms;
+    -ms-transition-duration: 500ms;
+    -moz-transition-duration: 500ms;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+  }
+  #float ul{
+    width: auto
+  }
+  .float_input,.float_textarea{width: 95%;background: #fcfcfc;border-radius: 5px;border: 1px solid #999;color: #555;}
+  #float_send{width: 95%;}
+  #float ul li label{
+    color: #555
+  }
+  .ceng {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1700;
+    display: none;
+  }
+  .phoness{
+    height: 50px;
+    line-height: 50px;
+  }
+  .phid{display: none}
+  #float h3,#float h4{
+    text-align: center;
+    width: auto;
+    color: #555;
+  }
+  .phshow{display: block;}
+
+  
 }
 
 

@@ -1,4 +1,5 @@
 <div class="clearfix"></div>
+<div class="ceng"></div>
 <!--foot -->
 <footer>
 <div class="foot">
@@ -28,8 +29,8 @@
 
 </div>
 
-<div>
-	<div id="float" style="display:none;">
+<div id="messageBoxss">
+	<!-- <div id="float" style="display:none;">
 	  <div id="float_close"><a href="javascript:closeFloat();"><img src="./images/float_close.png"></a></div>
 	  <form id="floatForm" method="post" action="/index.php?case=guestbook&act=index" name="frmGuestbookSubmit" class="form_message">
 		<input name="flcode" value="0" type="hidden">
@@ -53,7 +54,44 @@
 	  <h4>加盟热线:</h4>
 	  <h3>400  779  8866</h3>
 	  <h2><a id="float_servcie_call" href="http://manage.adcall.com.cn/WebCall/TM43.inc.jsp?wid=9001002346" target="_blank"><img src="./images/float_bottom.png" id="float_servcie_call_img"></a></h2>
-	</div>
+	</div> -->
+
+	<div id="float" class="mobMess" style="display:none;">
+	  <div id="float_close">
+	  	<a href="javascript:closeFloat();">
+	  		<img src="./images/float_close.png" class="phid">
+			<img src="./images/colse.png" class="hid phshow">
+	  	</a>
+	  </div>
+	  <form id="floatForm" method="post" action="/index.php?case=guestbook&act=index" name="frmGuestbookSubmit" class="form_message">
+		<input name="flcode" value="0" type="hidden">
+		<ul>
+		  <li>
+			<label>姓名：</label>
+			<input name="nickname" id="fl_name" class="float_input" type="text" value="">
+		  </li>
+		  <li>
+			<label>电话：</label>
+			<input name="guesttel" id="fl_phone" class="float_input guestbook_input" type="text">
+			<input type="text" name="title" id="title" value="客户留言" class="guestbook_input" style="display:none;">
+		  </li>
+			<li>
+				<label>请输入内容</label>
+				<textarea name="content" id="fl_content" class="float_textarea guestbook_textarea" onblur="if(this.value=='')this.value=''" onfocus="this.value=''"></textarea>
+				<button href="javascript:doFloatSubmit();" class="btn btn-primary" id="float_send" type="submit" name="submit" value="发送 SEND">发送 SEND</button>
+			</li>
+		</ul>
+	  <input name="__hash__" value="0c374db104b424eee184e11bf3471a40_9c3727b30af996bd7cb89a88e2df565c" type="hidden"></form>
+	  <h4>加装热线：</h4>
+	  <h3>4006080946</h3>
+	  <h2>
+	  	<a href="tel:4006080946" class="weui-tabbar__item">
+		  	<img src="./images/float_bottom.png" id="float_servcie_call_img" class="phid">
+			<p class="phoness"></p>
+		</a>
+	  </h2>
+	</div>	
+
 	<div id="float_hide"> <a href="javascript:showFloat();"><img src="./images/float_hide.png"></a> 
 		<div class="ToTops" onclick="$('html,body').animate({scrollTop : '0px'}, 400);"><i class="icon iconfont"><img src="./images/uparrow.png" /></i>回顶部</div>
 	</div>
@@ -66,9 +104,9 @@
 				<img id="home" alt="" class="weui-tabbar__icon" src="http://crm.qiaocat.com/upload/ad/0441d203434b24b9f998bcfee01da2ff.png"> 
 				<p class="weui-tabbar__label">首页</p>
 			</a> 
-			<a href="tencent://Message/?Uin=971264563&Menu=yes" class="weui-tabbar__item">
+			<a href="tel:4006080946" class="weui-tabbar__item">4006080946
 				<img id="find" alt="" class="weui-tabbar__icon" src="http://crm.qiaocat.com/upload/ad/0c9668dbcafbb42c5f7b554649c61762.png">
-				<p class="weui-tabbar__label">QQ在线咨询</p>
+				<p class="weui-tabbar__label">免费电话咨询</p>
 			</a> 
 			<a href="javascript:showFloat();" class="weui-tabbar__item">
 				<img id="usercenter" alt="" class="weui-tabbar__icon" src="http://crm.qiaocat.com/upload/ad/5eb84c38dacaeccac251a0e2ea831d66.png"> 
@@ -122,6 +160,8 @@
 					//  手机版
 					$("#float").hide();	
 					$("#float_hide").hide();
+					$('.ceng').hide();
+					$('#messageBoxss').removeClass('act');
 					tip=2;
 			   }else{
 					$("#float").hide();	
@@ -130,13 +170,22 @@
 			   }
 					
 			}
+
+			$('.ceng').click(function(){
+				$('.ceng').hide()
+				$("#float").hide()
+				$('#messageBoxss').removeClass('act')
+			})
 			
 			function showFloat(){
 				if(tip===1){
+					$('#messageBoxss').addClass('act')
+					$('.ceng').show()
 					$("#float_hide").hide();	
 					$("#float").show();	
 					tip=2;
 				}else if(tip===2){
+					
 					$("#float").hide();
 					tip=1;	
 				}
