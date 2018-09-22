@@ -10,12 +10,14 @@ input,select,textarea{font-size:12px;line-height:16px;}img{border:0;}ul,li{list-
 a{color:#000;text-decoration:none;}
 a:hover{text-decoration:none; color:#ae078a}
 .texttit{color: #6F4022;}.textcol{color: #C36D34; text-indent:2em}
+.cfff{color: #fff}
+.mt20{margin-top: 20px;}
 .bai{background:#FFF}
 .tc{text-align:center;}.tl{text-align:left;}.tr{text-align:right;}
 .dis{display:block;}.undis{display:none;}
 .fl{float:left;}.fr{float:right;}.cl{clear:both;}.fb{font-weight:bold;}.fnb{font-weight:200;margin-left
 :-1px;}
-.f14{font-size: 14px;line-height: 25px;}.f15{ font-size:15px}.f16{ font-size:16px}
+.f14{font-size: 18px;line-height: 45px;}.f15{ font-size:15px}.f16{ font-size:16px}
 .f36{ font-size:36px; line-height:55px}.f30{ font-size:30px; line-height:45px}
 .hr_100,.hr_400,.hr_10,.hr_5,.hr_20,.hr_70{font-size:1px; width:1px;line-height:1px;clear:both;}.col33
 { color:#333}
@@ -31,7 +33,7 @@ input[type="text"]:focus,input[type="password"]:focus,textarea:focus{outline:non
 .header { background:#f9f8f6; z-index:99999; position:fixed; top:0px; left:0px; width:100%; _position
 :absolute; _top: expression_r(documentElement.scrollTop + documentElement.clientHeight-this.offsetHeight
 ); box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);}
-.head{ width:998px; height:71px; margin:0 auto; background:url(wlbq.jpg) no-repeat}
+.head{ width:998px; height:71px; margin:0 auto; background:url(wlbq.jpg?) no-repeat}
 
 
 /* ---------- 幻灯片 ---------- */
@@ -47,7 +49,7 @@ input[type="text"]:focus,input[type="password"]:focus,textarea:focus{outline:non
 .index_slide_range .slidesjs-pagination a{display:block;width:15px;height:0px;padding-top:15px;background
 :url(../img/mk/ui.index.png) -3px 0 no-repeat;overflow:hidden;}
 .index_slide_range .slidesjs-pagination a.active{background-position:-3px -17px;}
-
+/*.actions b{color: #6F4022;}*/
 
 .index_slide .slidesjs-navigation {
     background: url("../img/allows.png") no-repeat scroll center top;
@@ -72,13 +74,13 @@ input[type="text"]:focus,input[type="password"]:focus,textarea:focus{outline:non
 }
 /* ----------幻灯片 End ---------- */
 
-.ce1{ height:439px; background:#fff}
+.ce1{ height:950px; background:#fff}
 .ce{background:#fff}
 .bg1{ background:url(bg1.jpg) no-repeat fixed center -200px;height:800px;}
-.bg2{ background:url(bg2.jpg) no-repeat fixed center -170px;height:800px;}
-.bg3{ background:url(bg3.jpg) no-repeat fixed center -170px;height:800px;}
-.bg4{ background:url(bg4.jpg) no-repeat fixed center -150px;height:800px;}
-.bg5{ background:url(bg5.jpg) no-repeat fixed center -150px;height:800px;}
+.bg2{ background:url(bg2.jpg) no-repeat fixed center 10px;height:800px;}
+.bg3{ background:url(http://shan3d.com/upload/images/201808/15338711187468.jpg) no-repeat fixed center 60px;height:800px;}
+.bg4{ background:url(bg4.jpg?) no-repeat fixed center 60px;height:800px;}
+.bg5{ background:url(bg5.jpg?) no-repeat fixed center 10px;height:800px;}
 .bg6{ background:url(bg6.jpg) no-repeat fixed center -150px;height:800px;}
 .bg7{ background:url(bg7.jpg) no-repeat fixed center -170px;height:800px;}
 .bg8{ background:url(bg8.jpg) no-repeat fixed center -150px;height:800px;}
