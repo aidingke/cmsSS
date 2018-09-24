@@ -205,12 +205,13 @@ repeat;cursor:pointer; background-size:25px auto; }
   .f14{font-size: 16px;line-height: 35px;}
   .f_auto{float: none;clear: both;display: block;width: auto;}
   .footerTab{bottom: -7px;}
-  .textcol{text-indent: 0.5em;width: 95%}
-  .mBox{}
+  .textcol{text-indent: 0.5em;width: 95%;margin-bottom: 0}
+  .mBox img{width: 100%;}
   .mhid{display: none;}
   .ceBox2 .textcol{width: 70%}
   .w100{height: 0}
   .mtImgsk{margin-top: 0}
+  .showB{display: block;}
 }
 
 
