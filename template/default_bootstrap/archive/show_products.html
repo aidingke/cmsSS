@@ -23,7 +23,7 @@
 <!-- 页面标题结束 -->
 
 
-<hr class="featurette-divider">
+<hr class="featurette-divider hid">
 
 
 <!-- 中部开始 -->
@@ -63,11 +63,11 @@
 			</tr>
 			{/if}
 			
-			<tr>
+			<tr class="hid">
 				<th>{lang('adddate')}：</th>
 				<td>{$archive['adddate']}</td>
 			</tr>
-			<tr>
+			<tr class="hid">
 				<th>{lang('strgrades')}：</th>
 				<td>{$archive['strgrade']}</td>
 			</tr>
@@ -215,9 +215,11 @@
 
 
 <div class="blank60"></div>
-<!-- 评论框开始 -->
-{template 'comment/comment.html'}
-<!-- 评论框结束 -->
+<div class="hid">
+	<!-- 评论框开始 -->
+	{template 'comment/comment.html'}
+	<!-- 评论框结束 -->
+</div>
 
 
 <!-- shopping 购物车 -->
@@ -228,12 +230,12 @@
 	</div>
 </div>
 <!-- s/shopping 购物车 -->
-
-
+<div class="blank60" style="height: 50px;"></div>
+<div class="hid">
 <!-- 页底推荐图文产品开始 -->
 {tag_内容页底图文产品三条}
 <!-- 页底推荐图文产品结束 -->
-
+</div>
 <script src="{$skin_path}/js/lightgallery/js/lightgallery.min.js"></script>
         <script src="{$skin_path}/js/lightgallery/js/lg-pager.min.js"></script>
 
