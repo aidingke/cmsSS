@@ -727,7 +727,7 @@ margin: 0 auto;
 
 
 .post-masonry p {line-height:200%;font-size:1.2em;}
-
+.post-masonry h4{background: #eee;padding: 1%;height: 35px;line-height: 35px;margin-top: 0;text-align: center;}
 #print img {max-width:100%;}
 
 #bootstrap-touch-slider,.banner {margin-top:82px;}
