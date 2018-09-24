@@ -2,13 +2,13 @@
 /* CSS Document */
 
 /*全局控制*/
-body{margin:0;padding:0;font-size:12px;line-height:22px;font-family:Arial,"微软雅黑","宋体";-webkit-text-size-adjust
+/*body{margin:0;padding:0;font-size:12px;line-height:22px;font-family:Arial,"微软雅黑","宋体";-webkit-text-size-adjust
 :none; min-width:1150px;}
 html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td
 ,p{margin:0;padding:0;}
 input,select,textarea{font-size:12px;line-height:16px;}img{border:0;}ul,li{list-style-type:none;}
 a{color:#000;text-decoration:none;}
-a:hover{text-decoration:none; color:#ae078a}
+a:hover{text-decoration:none; color:#ae078a}*/
 .texttit{color: #6F4022;}.textcol{color: #C36D34; text-indent:2em}
 .cfff{color: #fff}
 .mt20{margin-top: 20px;}
@@ -76,13 +76,13 @@ input[type="text"]:focus,input[type="password"]:focus,textarea:focus{outline:non
 
 .ce1{ height:950px; background:#fff}
 .ce{background:#fff}
-.bg1{ background:url(bg1.jpg) no-repeat fixed center -200px;height:800px;}
-.bg2{ background:url(bg2.jpg) no-repeat fixed center 10px;height:800px;}
+.bg1{ background:url(http://shan3d.com/html/bg1.jpg) no-repeat fixed center -200px;height:800px;}
+.bg2{ background:url(http://shan3d.com/html/bg2.jpg) no-repeat fixed center 10px;height:800px;}
 .bg3{ background:url(http://shan3d.com/upload/images/201808/15338711187468.jpg) no-repeat fixed center 60px;height:800px;}
-.bg4{ background:url(bg4.jpg?) no-repeat fixed center 60px;height:800px;}
-.bg5{ background:url(bg5.jpg?) no-repeat fixed center 10px;height:800px;}
-.bg6{ background:url(bg6.jpg) no-repeat fixed center -150px;height:800px;}
-.bg7{ background:url(bg7.jpg) no-repeat fixed center -170px;height:800px;}
+.bg4{ background:url(http://shan3d.com/html/bg4.jpg?) no-repeat fixed center 60px;height:800px;}
+.bg5{ background:url(http://shan3d.com/html/bg5.jpg?) no-repeat fixed center 10px;height:800px;}
+.bg6{ background:url(http://shan3d.com/html/bg6.jpg) no-repeat fixed center -150px;height:800px;}
+.bg7{ background:url(http://shan3d.com/html/bg7.jpg) no-repeat fixed center -170px;height:800px;}
 .bg8{ background:url(bg8.jpg) no-repeat fixed center -150px;height:800px;}
 .bg9{ background:url(bg9.jpg) no-repeat fixed center -130px;height:800px;}
 .bg10{ background:url(bg10.jpg) no-repeat fixed center -100px;height:800px;}
@@ -190,3 +190,37 @@ repeat;cursor:pointer; background-size:25px auto; }
 .share-con a span.taojianghu{background-position:0 -225px;}
 .share-con a span.douban{background-position:0 -250px;}
 .share-con a span.baidusoucang{background-position:0 -275px;margin-right:0px;}
+
+.mtImgsk{width: 500px;margin-top: 120px; }
+
+
+
+@media (max-width: 768px) {
+  .ce1{width: 95%;height: auto;overflow: hidden;}
+  .ceBox{margin-left: 1%;clear: both;float: none;}
+  .hr_100{height: 10px;}
+  .hr_400{height: 15px;}
+  .f36{font-size: 26px;}
+  .f30{font-size: 20px;}
+  .f14{font-size: 16px;line-height: 35px;}
+  .f_auto{float: none;clear: both;display: block;width: auto;}
+  .footerTab{bottom: -7px;}
+  .textcol{text-indent: 0.5em;width: 95%}
+  .mBox{}
+  .mhid{display: none;}
+  .ceBox2 .textcol{width: 70%}
+  .w100{height: 0}
+  .mtImgsk{margin-top: 0}
+}
+
+
+
+
+
+
+
+
+
+
+
+
