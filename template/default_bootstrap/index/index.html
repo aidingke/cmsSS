@@ -117,11 +117,44 @@
 
 <div class="index-3">
 	<div class="container">
+		<div class="aboutUsInfo" style="background: #333;padding: 45px 0;">
+			<div class="title">
+				<p class="wow fadeIn animated" style="color: #fff;font-size: 20px;line-height: 40px;margin-bottom: 0;">如果你 想要更多的了解，请联系我们 
+					<a class="anli" href="4006080946" title="" style="color: #00c0ff">400-608-0946</a>
+				</p>
+				<p style="font-size: 12px;color: #fff;width: 85%;">If you want more understanding, please contact us</p>
+			</div>
+		</div>
+
+
+		<div class="formUs">
+			<form method="post" action="/index.php?case=guestbook&act=index" name="frmGuestbookSubmit" class="form_message">
+				<input name="flcode" value="0" type="hidden">
+				<ul>
+				  <li>
+					<label>姓名：</label>
+					<input name="nickname" class="" type="text" value="" >
+				  </li>
+				  <li>
+					<label>电话：</label>
+					<input name="guesttel" class="guestbook_input" type="text">
+					<input type="text" name="title" value="客户留言" class="guestbook_input" style="display:none;">
+				  </li>
+					<li>
+						<label>请输入内容：</label>
+						<textarea name="content" class=" guestbook_textarea"></textarea>
+					</li>
+				</ul>
+			  <input name="__hash__" value="0c374db104b424eee184e11bf3471a40_9c3727b30af996bd7cb89a88e2df565c" type="hidden">
+			  <p style="margin: 0 auto;text-align: center;"><button class="btn btn-primary" type="submit" name="submit" value="提交">提交</button></p>
+			</form>
+		</div>
+
 		<div class="map p_rel" style="width:100%;overflow:hidden;margin:0 auto;">
 			<div id="mainMap">
 				
 			</div>
-			<div class="p_rel map_img">
+			<div class="p_rel map_img hid">
 				<img src="{$skin_path}/images/base/map_title.png" class="" style="width: 83%;display: block;margin: 0 auto;">
 			</div>
 		</div>
@@ -197,6 +230,7 @@
 	</div>
 </div>
 
+
 <script src="{$skin_path}/lib/chart/echarts.js"></script>
 <script>
 	$(function(){
@@ -217,8 +251,8 @@
 				// --- 地图 ---
 				var myChart2 = ec.init(document.getElementById('mainMap'));
 					myChart2.setOption(option = {
-						backgroundColor: '#042E44',
-						color: ['yellow','#AAA639','yellow'],
+						backgroundColor: '',
+						color: ['#e14633','#e14633','#e14633'],
 						title : {
 							text: '',
 							subtext:'',
@@ -240,7 +274,7 @@
 										borderWidth:0.5,
 										// label:{show:true,textStyle: {color: "#6a7d44"}},//显示地域全国
 										areaStyle:{
-											color: '#0D485C'
+											color: '#fff'
 										}
 									}
 								},
@@ -421,7 +455,7 @@
 									},
 									itemStyle:{
 										normal:{
-											label:{show:true}
+											label:{show:false}
 										},
 										emphasis: {
 											label:{position:'top'}

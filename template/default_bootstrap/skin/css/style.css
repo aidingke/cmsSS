@@ -1639,7 +1639,11 @@ header .am-fl.am-fl img {
   color: #00acff;
   font-weight: bold;
 }
-
+ .formUs{width: 75%;margin:10% auto;}
+  .formUs li{margin-bottom: 15px;}
+  .formUs label{width: 105px;}
+  .formUs input,textarea{width: 65%}
+  .formUs .btn{width: 55%;}
 @media (max-width: 768px) { 
 .act #float{
     bottom: 0;
@@ -1685,8 +1689,11 @@ header .am-fl.am-fl img {
     color: #555;
   }
   .phshow{display: block;}
-
-  
+   
+  .formUs{width: 95%;}
+  .formUs ul{padding-left: 0}
+  .formUs input,textarea{width: 95%}
+  .formUs .btn{width: 95%;}
 }
 
 
