@@ -217,7 +217,7 @@ bottom:10%;
 #guestbook_title {clear:both; width:100%;padding:0px 5px;}
 .foot-contactus {padding:0px; color:#9b9b9b;}
 .foot-contactus ul {padding:10px 0px;}
-
+.foot-contactus ul li{display:inline-block;width: 45%;text-align: center;}
 #verifycode_guest {clear:both; margin:20px 0px;}
 
 #qrcode canvas {width:150px; border:15px solid white;}
@@ -257,6 +257,10 @@ margin-top:15px;}
 @media (max-width: 768px) {
 .sub_menu {
 height:0px;overflow:hidden;
+}
+.foot-contactus ul li{
+      width: 100%;
+     text-align: left; 
 }
 }
 
@@ -1644,7 +1648,7 @@ header .am-fl.am-fl img {
   .formUs li{margin-bottom: 15px;}
   .formUs label{width: 105px;}
   .formUs input,textarea{width: 65%;border: 1px solid #ddd;}
-  .formUs .btn{width: 25%;}
+  .formUs .btn{width: 79%;}
 
 @media (max-width: 768px) { 
 .act #float{

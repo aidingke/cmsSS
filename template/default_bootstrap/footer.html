@@ -63,7 +63,7 @@
 			<img src="./images/colse.png" class="hid phshow" style="width:79%">
 	  	</a>
 	  </div>
-	  <form id="floatForm" method="post" action="/index.php?case=guestbook&act=index" name="frmGuestbookSubmit" class="form_message">
+	<form id="floatForm" method="post" action="/index.php?case=guestbook&act=index" name="frmGuestbookSubmit" class="form_message">
 		<input name="flcode" value="0" type="hidden">
 		<ul>
 		  <li>
@@ -81,7 +81,8 @@
 				<button href="javascript:doFloatSubmit();" class="btn btn-primary" id="float_send" type="submit" name="submit" value="发送 SEND">发送 SEND</button>
 			</li>
 		</ul>
-	  <input name="__hash__" value="0c374db104b424eee184e11bf3471a40_9c3727b30af996bd7cb89a88e2df565c" type="hidden"></form>
+	  <input name="__hash__" value="0c374db104b424eee184e11bf3471a40_9c3727b30af996bd7cb89a88e2df565c" type="hidden">
+	</form>
 	  <h4>免费热线：</h4>
 	  <h3>4006080946</h3>
 	  <h2>
@@ -119,10 +120,11 @@
 
 <div class="row" style="margin-top: 2%">
 
-<div class="foot-guestbook col-xs-12 col-sm-6 col-md-5 col-lg-5">
+<div class="foot-guestbook col-xs-12 col-sm-6 col-md-5 col-lg-5 hid">
 {callGuestbook()}
 </div>
-<div class="foot-contactus col-xs-12 col-sm-6 col-md-5 col-lg-3 " style="margin-left: 5%">
+<!-- <div class="foot-contactus col-xs-12 col-sm-6 col-md-5 col-lg-3 " style="margin-left: 5%"> -->
+<div class="foot-contactus col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="margin-left: 5%">
 
 <ul>
 <li>{lang('address')}：{get('address')}</li>
