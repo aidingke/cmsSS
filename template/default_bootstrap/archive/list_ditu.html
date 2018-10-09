@@ -1,10 +1,83 @@
 {template 'header.html'}
+<style type="text/css">
+	.profilePage {
+			background: #fff;
+			padding: 30px 20px 0;
+			max-width: 1300px;
+			margin:0 auto;
+		}
 
+		.profileTile {
+			border-bottom: 1px solid #ccc;
+			color: #00adff;
+			font-size: 20px;
+			padding: 10px 0px;
+			margin-bottom: 10px;
+			letter-spacing: 2px;
+			max-width: 1000px;
+			margin:0 auto;
+		}
+
+		.profileContent {
+			line-height: 30px;
+			padding: 10px 0px;
+			text-indent: 2em;
+			font-size: 16px;
+			letter-spacing: 1px;
+			color: #606060;
+			max-width: 1000px;
+			margin:0 auto;
+		}
+		.profileInfo{
+			position: relative;
+		}
+		#container{
+			margin-top:20px;
+			height:720px;
+			width: 1000px;
+    		margin: 0 auto;
+		}
+		.info{
+			display: none;
+			position: absolute;
+			padding:0 15px;
+			color:#555;
+			background: #fff;
+			right:25%;
+			bottom:22%;
+			z-index: 160;
+			width:265px;
+			-webkit-box-shadow:0 0 3px #555;  
+			-moz-box-shadow:0 0 3px #555;  
+			box-shadow:0 0 3px #555;  
+			padding-bottom: 20px;
+		}
+		.info .infoTitle{
+			font-size: 16px;
+			font-weight: bold;
+			border-bottom:1px solid #00acfe;
+			width:90%;
+			text-align: center;
+			padding:16px 3%;
+			margin:0 2% 20px;
+		}
+		.info .infoDes{
+			padding-bottom:15px; 
+			padding-left:30px;
+			position: relative;
+		}
+		.info .infoDes img{
+			width:17px;
+			position: absolute;
+			left:0;
+			top:2px;
+		}
+</style>
 <div class="contact-us">
 	<div class="container">
 		<h3>
-			<span>HELLO.</span> What can we<br />
-			help you with?
+			<!-- <span>HELLO.</span> What can we<br />
+			help you with? -->
 		</h3>
 		<div class="row">
 		<div class="col-xs-12 col-sm-4">
@@ -37,10 +110,36 @@
 			<div class="blank20"></div>
 		</div>
 	</div>
-
-	<div class="content-ditu">
-		{template 'ditu.html'}
+	<div class="profilePage">
+		<p class="profileTile">公司简介</p>
+		<p class="profileContent">
+加装易（广州）科技有限公司是专业从事既有楼宇加装及更换电梯服务的一站式平台。
+<br/>
+公司在国内率先提出加装电梯保姆式服务理念，提供全生命周期的托管式加装电梯服务。
+您只需要将加装电梯项目交给我们，其他所有事务都由我们加装易各部门的专业人员进行协调和组织。
+不需要您花费宝贵的私人时间奔走于与邻里间的沟通、与政府部门的协调，完全解决加装电梯的后顾之忧。
+<br/>
+加装易科技团队由具有多年电梯行业经验的服务人员、机电工程师、建筑设计工程师、电梯高级技工等组成。
+公司与三菱电机、日立电梯、通力电梯、奥的斯电梯等多个国内外一线电梯品牌进行战略合作。
+<br/>
+公司拥有钢结构井道专业工厂作为合作单位，土建总承包单位为拥有许多大型项目经验的专业土建资质公司。
+<br/>
+加装易科技立足于广州，公司佛山、深圳运营部及武汉分公司在积极的筹划之中。未来，加装易将会把最优质的加装服务拓展至全国。也将成为国内专业加装电梯领域第一平台而努力。</p>
+		<section class="profileInfo">
+			<section id="container" class="map" tabindex="0">
+				{template 'ditu.html'}
+			</section>
+			<section class="info">
+				<section class="infoTitle">联系我们</section>
+				<section class="infoDes address"><img src="./img/icon_profile01.jpg">广州市天河区林和西路157号保利中汇广场A座1510</section>
+				<section class="infoDes"><img src="./img/icon_profile02.jpg"><a>020-36297230</a></section>
+			</section>
+		</section>
 	</div>
+
+	<!-- <div class="content-ditu">
+		{template 'ditu.html'}
+	</div> -->
 </div><!-- /lianxi -->
 <style type="text/css">
 @media (max-width: 768px) {
