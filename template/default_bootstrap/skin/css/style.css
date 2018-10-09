@@ -1182,7 +1182,7 @@ xcredits
 	.title-2 a{font-size:1rem;}
 	.index-2 div div{padding:0;}
 	.index-2 div div.img-auto a{height:auto;}
-	.index-3-left p,.index-2 div div p{font-size:0.3rem;}
+	.index-3-left p,.index-2 div div p{font-size:16px;}
 	.title p, .title-index-1 p{font-size:0.5rem;}
 	.navbar-nav{padding-left:5%;}
 	.index-1, .index-3{margin:0;}
