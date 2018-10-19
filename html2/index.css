@@ -76,13 +76,13 @@ input[type="text"]:focus,input[type="password"]:focus,textarea:focus{outline:non
 
 .ce1{ height:950px; background:#fff}
 .ce{background:#fff}
-.bg1{ background:url(http://shan3d.com/html2/bg1.jpg) no-repeat fixed center -200px;height:800px;}
-.bg2{ background:url(http://shan3d.com/html2/bg2.jpg) no-repeat fixed center 10px;height:800px;}
-.bg3{ background:url(http://shan3d.com/upload/images/201808/15338711187468.jpg) no-repeat fixed center 60px;height:800px;}
-.bg4{ background:url(http://shan3d.com/html2/bg4.jpg?) no-repeat fixed center 60px;height:800px;}
-.bg5{ background:url(http://shan3d.com/html2/bg5.jpg?) no-repeat fixed center 10px;height:800px;}
-.bg6{ background:url(http://shan3d.com/html2/bg6.jpg) no-repeat fixed center -150px;height:800px;}
-.bg7{ background:url(http://shan3d.com/html2/bg7.jpg) no-repeat fixed center -170px;height:800px;}
+.bg1{ background:url(/html2/bg1.jpg) no-repeat fixed center -200px;height:800px;}
+.bg2{ background:url(/html2/bg2.jpg) no-repeat fixed center 10px;height:800px;}
+.bg3{ background:url(/upload/images/201808/15338711187468.jpg) no-repeat fixed center 60px;height:800px;}
+.bg4{ background:url(/html2/bg4.jpg?) no-repeat fixed center 60px;height:800px;}
+.bg5{ background:url(/html2/bg5.jpg?) no-repeat fixed center 10px;height:800px;}
+.bg6{ background:url(/html2/bg6.jpg) no-repeat fixed center -150px;height:800px;}
+.bg7{ background:url(/html2/bg7.jpg) no-repeat fixed center -170px;height:800px;}
 .bg8{ background:url(bg8.jpg) no-repeat fixed center -150px;height:800px;}
 .bg9{ background:url(bg9.jpg) no-repeat fixed center -130px;height:800px;}
 .bg10{ background:url(bg10.jpg) no-repeat fixed center -100px;height:800px;}
