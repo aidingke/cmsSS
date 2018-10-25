@@ -3,7 +3,7 @@
 <div class="img-auto">
 <h4><a style="color:{$arc['color']};margin-left:2%;" href="{$archive['url']}" title="{$archive['stitle']}" target="_blank">{$archive['title']}</a></h4>
 <a href="{$archive['url']}" target="_blank"><img alt="{$archive['stitle']}" src="{$archive['thumb']}" onerror='this.src="{config::get('onerror_pic')}"' class="img-responsive" /></a>
-<p class="date">{$archive['adddate']}</p>
+<p class="date hid">{$archive['adddate']}</p>
 <p>{cut(strip_tags($archive['introduce']),46)}...</p>
 </div>
 </div>
