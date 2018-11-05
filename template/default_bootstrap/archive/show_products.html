@@ -189,7 +189,7 @@
 {if is_array($likenews)}
 <div class="blank60"></div>
 <!-- 页面标题开始 -->
-<div class="title">
+<div class="title hid">
 <h3><a>{$archive['tag']}<small>{lang('relatedcontent')}</small></a></h3>
 <p></p>
 <span>——</span>
@@ -199,7 +199,7 @@
 <div class="container">
 	<!-- 内容列表开始 -->
 	{loop $likenews $item}
-	<div class="news-list list-border">
+	<div class="news-list list-border hid">
 		<div class="list-date">
 			<span>{=sdate($item['adddate'],'d')}</span>
 <p>{=sdate($item['adddate'],'Y-m')}</p>
@@ -212,7 +212,6 @@
 </div>
 {/if}
 <!-- 相关文章结束 -->
-
 
 <div class="blank60"></div>
 <div class="hid">
